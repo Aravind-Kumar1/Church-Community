@@ -1,134 +1,154 @@
-/* Contact Us Page Styles */
-
+/* General Layout */
 .contactWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-   
-    background-color: #f9f9f9;
-    padding: 20px;
-  }
-  
-  .contactContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contactCard {
-    width: 100%;
-    max-width: 100%;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    text-align: center;
-    box-sizing: border-box;
-    border: 2px solid #ddd; /* Border around the card */
-  }
-  
-  .contactHeading {
-    font-size: 28px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-  }
-  
-  .contactDescription {
-    font-size: 18px;
-    color: #777;
-    margin-bottom: 25px;
-    font-weight: 500;
-  }
-  
-  .socialIcons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .iconSize {
-    font-size: 25px;
-    color: #333;
-    padding: 15px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    transition: all 0.3s ease;
-  }
-  
-  .iconSize:hover {
-    background-color: #4CAF50;
-    color: #fff;
-    border-color: #4CAF50;
-  }
-  
-  .contactButtons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .contactButton {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 50px; /* Pill shape */
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-weight: bold;
-  }
-  
-  .contactButton:hover {
-    background-color: #45a049;
-    transform: scale(1.05); /* Slight expansion effect */
-  }
-  
-  .contactButton .icon {
-    font-size: 20px;
-  }
-  
-  .contactButton:focus {
-    outline: none;
-  }
-  
-  /* Media Query for Responsive Design */
-  @media (max-width: 768px) {
-    .contactCard {
-      width: 100%;
-      padding: 20px;
-    }
-  
-    .contactHeading {
-      font-size: 24px;
-    }
-  
-    .contactDescription {
-      font-size: 16px;
-    }
-  
-    .socialIcons {
-      gap: 20px;
-    }
-  
-    .iconSize {
-      font-size: 36px;
-      padding: 12px;
-    }
-  
-    .contactButton {
-      font-size: 14px;
-      padding: 12px 25px;
-    }
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.contactContainer {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactCard {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contactHeading {
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contactDescription {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: grayscale(100%);
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* Buttons */
+.contactButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contactButton {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+
+.contactButton:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+/* Share Modal */
+.shareModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shareContent {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.shareHeading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.shareIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.shareIcon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.shareIcon:hover {
+  transform: scale(1.1);
+}
+/* Button for Get Directions */
+.contactButton .buttonIcon {
+  width: 25px;  /* Adjust the size to fit better */
+  height: 25px; /* Adjust the size to fit better */
+  margin-right: 8px;  /* Space between icon and text */
+}

@@ -1,4 +1,3 @@
-// /pages/get-involved.js
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -75,6 +74,12 @@ const GetInvolved = () => {
       );
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSubmit(e); // Submit form when "Enter" is pressed
+    }
+  };
+
   return (
     <div>
       <Header />
@@ -85,7 +90,11 @@ const GetInvolved = () => {
             Join us in making a difference. Whether you're volunteering, donating, or offering your skills in other ways, we'd love to have you on board.
           </p>
 
-          <form className={styles.involvedForm} onSubmit={handleSubmit}>
+          <form
+            className={styles.involvedForm}
+            onSubmit={handleSubmit}
+            onKeyDown={handleKeyDown} // Add this line
+          >
             <div className={styles.formRow}>
               <div className={styles.formGroup}>
                 <label htmlFor="name" className={styles.formLabel}>Your Name</label>

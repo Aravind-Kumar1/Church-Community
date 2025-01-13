@@ -42,6 +42,7 @@
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(231, 125, 26, 0.09);
     transition: transform 0.3s ease;
+    filter: brightness(1.2);
   }
   
   .aboutImage:hover {

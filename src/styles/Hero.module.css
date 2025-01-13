@@ -1,8 +1,13 @@
 /* Additional Fix for Horizontal Overflow */
-html, body {
+.heroPage {
     overflow-x: hidden; /* Remove horizontal scroll */
+}
+
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Ensure overflow-x is hidden here as well */
 }
 
 /* Hero Section Styles */
@@ -17,6 +22,7 @@ html, body {
     font-family: 'Roboto', sans-serif;  /* More elegant font */
     position: relative;
     overflow: hidden;
+    max-width: 100%;  /* Ensure that content doesn't exceed the viewport */
 }
 
 /* Hero Content */
@@ -25,10 +31,10 @@ html, body {
     margin-top: -100px;
     max-width: 50%;
     animation: fadeIn 2s ease-out;
+    box-sizing: border-box;
 }
 
 .heroTitle {
-    
     font-size: 3.2rem;
     color: #003060;
     margin-bottom: 20px;
@@ -62,6 +68,7 @@ html, body {
     animation: fadeIn 3s ease-out;
     font-style: normal; /* Keep it normal for readability */
 }
+
 /* Hero Buttons */
 .heroButtons {
     display: flex;
@@ -142,6 +149,7 @@ html, body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
+    filter: brightness(1.1);
 }
 
 /* Keyframe Animations */

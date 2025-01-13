@@ -73,6 +73,14 @@ const Contact = () => {
       );
   };
 
+  // Handle Enter key press to submit form
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault(); // Prevent default form submit behavior
+      handleSubmit(e); // Manually trigger the submit handler
+    }
+  };
+
   return (
     <div className={styles.contactPageWrapper}>
       <Header />
@@ -85,6 +93,7 @@ const Contact = () => {
             className={styles.contactForm}
             method="POST"
             onSubmit={handleSubmit}
+            onKeyDown={handleKeyDown} // Listen for Enter key press
           >
             <input
               type="text"

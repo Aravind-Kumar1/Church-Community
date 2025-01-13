@@ -15,6 +15,18 @@ export default function YouthVideoSection() {
         title: "Book of Daniel", 
         embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/9cSC9uobtPM?si=k-vVjUnJFpT3wrfV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
       },
+      { 
+        title: "Book of Jeremiah", 
+        embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/RSK36cHbrk0?si=RQDsuXfUr8_5mH1R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+      },
+      { 
+        title: "Book of Esther", 
+        embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/JydNSlufRIs?si=UxnRG51QZ_0ZDynt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+      },
+      { 
+        title: "Book of Revelation ", 
+        embedCode: `<iframe width="560" height="315" src="https://www.youtube.com/embed/QpnIrbq2bKo?si=rgt6YvL7FcyZi_0e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+      },
       
     // Add other videos here...
   ];
