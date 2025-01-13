@@ -1,12 +1,16 @@
 /* Additional Fix for Horizontal Overflow */
 .heroPage {
+    
     overflow-x: hidden; /* Remove horizontal scroll */
 }
 
+
 /* Hero Section Styles */
-.hero {
+.heroSection {
+    
+    margin-top: 50px;
     display: flex;
-    margin-bottom: -100px;
+    margin-bottom: -50px;
     align-items: center;
     justify-content: space-between;
     padding: 50px;

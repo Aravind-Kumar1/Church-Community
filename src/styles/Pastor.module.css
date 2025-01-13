@@ -55,13 +55,13 @@
   }
   
   .pastorImage {
-    margin-top: -43px;
-    width: 76%;
+    margin-top: -29px;
+    width: 85%;
     height: auto;
     border-radius: 12px;
     transition: transform 0.3s ease;
     /* box-shadow: 0 4px 8px rgba(61, 11, 210, 0.936); */
-    margin-left: -5px;
+    margin-left: 15px;
   }
   
   .pastorImage:hover {

@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import styles from '../styles/Hero.module.css';
+import '../styles/global.css'; // Do not use `styles` as the alias for global CSS.
+
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.heroSection}>
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>
           Building a <span className={styles.bold}>Community</span><br />
