@@ -1,0 +1,140 @@
+/* Section Styles */
+.servantsSection {
+    background: #f4f8fc;
+    padding: 100px 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #003060;
+    margin-bottom: 10px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionTitle::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #ff8000; /* Underline color */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Tagline */
+.sectionTagline {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    color: #173b45;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Content Wrapper */
+.contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+/* Text Card */
+.textCard {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Lato', sans-serif;
+}
+
+.textCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Content */
+.heading {
+    font-size: 2.2rem;
+    font-family: 'Merriweather', serif;
+    color: #003060;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.text {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    color: #4a4a4a;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Highlighted Name Style */
+.nameHighlight {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #080303c8;
+}
+
+/* Image Card */
+.imageCard {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Lato', sans-serif;
+}
+
+.imageCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.516);
+}
+
+.imageWrapper {
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textCard,
+    .imageCard {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+}

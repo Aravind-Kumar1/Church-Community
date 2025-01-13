@@ -1,0 +1,97 @@
+.videoSection {
+    margin-top: 100px;
+    padding: 40px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .heading {
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    color: #003060;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .heading::after {
+    content: '';
+    display: block;
+    width: 15%;
+    height: 3px;
+    background: #ff8000; /* Underline color */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    color: #173b45;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  
+  .videoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 1200px) {
+    .videoGrid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .videoGrid {
+      grid-template-columns: 1fr; /* 1 card per row */
+    }
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card iframe {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #34495e;
+    font-weight: 600;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

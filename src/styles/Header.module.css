@@ -1,0 +1,135 @@
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 15px 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  margin-left: 30px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  height: 60px;
+  width: 60px;
+}
+
+.logoTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+  color: #173B45;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555555;
+  margin-top: 2px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* Navigation styles */
+.navLinks {
+  margin-left: -70px;
+  display: flex;
+  list-style: none;
+  gap: 26px;
+}
+
+.navLinks li {
+  margin: 0;
+}
+
+.navLinks li a {
+  color: #003060;
+  font-size: 15.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 5px 0;
+  font-weight: 600;
+  transition: color 0.3s ease, padding 0.3s ease;
+}
+
+.navLinks li a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #FF8225;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.navLinks li a:hover::after {
+  width: 100%;
+}
+
+
+
+.navLinks li a.active::after {
+  width: 100%;
+  background-color: #FF8225;
+}
+
+/* Stylish and Professional Gradient Button */
+.ctaButtonContainer {
+  margin-left: 20px;
+}
+
+.ctaButton {
+  margin-right: 20px;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #6a5acd, #ff6347);  /* Purple to Tomato gradient */
+  color: white;
+  border: none;
+  border-radius: 50px;  /* Rounded corners */
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton:hover {
+  transform: scale(1.1);  /* Slightly enlarge the button on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #ff6347, #6a5acd);  /* Reverse the gradient on hover */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 99, 71, 0.6);  /* Highlight the button when focused */
+}
+
+.ctaButton:active {
+  transform: scale(1);  /* Maintain size on click */
+}

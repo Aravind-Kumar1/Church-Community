@@ -1,0 +1,161 @@
+/* General Settings */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #F4F7FC;
+  --text-color: #333;
+  --label-color: #666;
+  --input-border: #ccc;
+  --input-focus-border: #4CAF50;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --background: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-bottom: 3px;
+  margin-top: 80px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); */
+}
+
+.heroHeading {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.heroDescription {
+  font-size: 18px;
+  color: var(--label-color);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Form Styling */
+.formContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: 0 10px 40px var(--shadow);
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.formGroup {
+  flex: 1 1 48%;
+  margin-bottom: 25px;
+}
+
+.formLabel {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 8px;
+  display: block;
+}
+.formTextarea{
+  width: 50%;
+}
+.formInput,
+.formSelect {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formInput:focus,
+.formTextarea:focus,
+.formSelect:focus {
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formSelect {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+/* Submit Button */
+/* Submit Button - Smaller Size */
+.submitButton {
+  display: inline-block;
+  width: auto; /* Shrink to content width */
+  padding: 12px 20px; /* Smaller padding */
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px; /* Smaller font size */
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: -5px;
+  margin-left: 160px;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+
+
+.submitButton:active {
+  background-color: #387c3b;
+  transform: translateY(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+  }
+
+  .formGroup {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroHeading {
+    font-size: 28px;
+  }
+
+  .heroDescription {
+    font-size: 14px;
+  }
+
+  .formContainer {
+    padding: 20px;
+  }
+}

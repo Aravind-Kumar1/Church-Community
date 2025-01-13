@@ -1,0 +1,131 @@
+/* History Section Styles */
+.historySection {
+    background: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.historySectionTitle {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #003060;
+    margin-bottom: 5px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Underline Section Title with #ff8000 */
+.historySectionTitle::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #ff8000;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Subtitle */
+.historySectionSubtitle {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    color: #173b45;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Content Wrapper */
+.historyContentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Left side Image Slider */
+.imageCard {
+    flex: 1;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.501);
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    padding: 0;
+}
+
+.imageSlider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+.imageSlider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.imageSlider .slide.active {
+    opacity: 1;
+}
+
+/* Right side Text Summary */
+.textCard {
+    flex: 1;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.751);
+    padding: 20px;
+    text-align: left;
+}
+
+.textCard h3 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ff8000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.textCard p {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .historyContentWrapper {
+        flex-direction: column;
+    }
+
+    .imageCard,
+    .textCard {
+        max-width: 90%;
+    }
+}

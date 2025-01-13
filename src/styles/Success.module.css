@@ -1,0 +1,19 @@
+/* styles/Success.module.css */
+.successContainer {
+    margin-top: 80px;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .successHeading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .successMessage {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,94 @@
+.ministriesSection {
+    padding: 80px 50px;
+    background-color: #f4f7fb; /* Light background for clarity */
+    text-align: center;
+  }
+  
+  .sectionHeading {
+    font-size: 2.5rem;
+    color: #003366;
+    font-weight: bold;
+ 
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .sectionHeading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ff6600; /* Accent color */
+    margin: 15px auto;
+  }
+  
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 250px; /* Set the same height for all images */
+    object-fit: contain; /* Ensures images cover the area without distortion */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .cardImage:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardContent {
+    padding: 20px;
+  }
+  
+  .cardTitle {
+    font-size: 1.8rem;
+    color: #003366;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+  
+  .cardDescription {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  /* Remove Get Involved button */
+  .cardButton {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cardsContainer {
+      grid-template-columns: 1fr 1fr; /* For smaller screens, display 2 cards */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cardsContainer {
+      grid-template-columns: 1fr; /* For very small screens, display 1 card */
+    }
+  }
+  

@@ -1,0 +1,142 @@
+/* Section Styles */
+.teamsSection {
+    background: #ffffff;
+    padding: 50px 20px; /* Reduced padding */
+    text-align: center;
+}
+
+/* Section Title */
+.sectionTitle {
+    font-size: 3rem; /* Reduced font size */
+    font-family: 'Playfair Display', serif;
+    color: #003060;
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionTitle::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #ff8000; /* Underline color */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Tagline */
+.sectionTagline {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    font-family: 'Roboto', sans-serif;
+    color: #173b45;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Carousel Container */
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 500px; /* Increased height for better image display */
+    margin: 0 auto;
+    overflow: hidden; /* Ensures images don't overflow */
+}
+
+/* Image Wrapper */
+.imageWrapper {
+    display: flex;
+    transition: transform 1s ease; /* Smooth transition between slides */
+    position: relative;
+    width: 70%; /* Adjusted width */
+    height: 90%; /* Adjusted height */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Card */
+.carouselImageCard {
+    margin-top: -50px;
+    opacity: 0; /* Default state for the carousel images */
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    margin-left: 20px; /* Reduced left margin */
+    width: 40%; /* Increased width of the image card */
+    height: 60%; /* Increased height for better focus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transform: scale(0.95); /* Slightly scale images for effect */
+}
+
+.carouselImageCard.active {
+    opacity: 1; /* Make active images visible */
+    transform: scale(1); /* Scale up the active card */
+}
+
+/* Image Item */
+/* Image Item */
+.carouselImageItem {
+    width: 100%;
+    height: 100%; /* Changed to 100% for full coverage */
+    object-fit: contain; /* Ensures the image covers the entire card */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Team Names Wrapper */
+.teamNamesWrapper {
+    margin-top: -220px;
+}
+
+.teamHeading {
+    margin-bottom: 50px;
+    margin-top: -50px;
+    margin-left: 45px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #003060;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carouselContainer {
+        height: 400px; /* Adjusted height on mobile */
+    }
+
+    .carouselImageCard {
+        width: 70%; /* Adjusted image width for mobile */
+        height: 70%; /* Adjusted image height for mobile */
+    }
+
+    .carouselImageItem {
+        border-radius: 12px; /* Smaller border-radius for mobile */
+    }
+
+    .sectionTitle {
+        font-size: 2rem; /* Smaller title size for mobile */
+    }
+
+    .sectionTagline {
+        font-size: 1.3rem; /* Smaller tagline font size for mobile */
+    }
+
+    .teamHeading {
+        font-size: 2rem; /* Adjusted heading size for mobile */
+    }
+}

@@ -1,0 +1,87 @@
+/* Footer styles */
+.footer {
+    background-color: #003060;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative; /* Ensure footer stays in place */
+    width: 100%;
+    overflow: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .footerContainer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .footerSection {
+    margin-bottom: 20px;
+  }
+  
+  .footerSection h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footerSection p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .footerLinks {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footerLinks li {
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footerLinks a:hover {
+    color: #4CAF50;
+  }
+  
+  .footerSocialIcons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .footerSocialIcons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footerSocialIcons a:hover {
+    color: #4CAF50;
+  }
+  
+  .footerCopyright {
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContainer {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  

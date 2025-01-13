@@ -1,0 +1,89 @@
+/* Call-to-Action Section Styles */
+.callToActionSection {
+    background: linear-gradient(to right, #003060, #004080); /* Graceful gradient */
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: -50px;
+    margin-bottom: 35px;
+    /* margin: 80px auto; */
+    background-size: 400% 400%; /* Animated gradient */
+    animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.callToActionTitle {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+}
+
+.callToActionTagline {
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ctaButton {
+    background: #ff8000;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ctaButton:hover {
+    background: #ffa333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ctaButton.secondary {
+    background: #004080;
+    color: #fff;
+}
+
+.ctaButton.secondary:hover {
+    background: #0050a0;
+}
+
+.ctaButton.outline {
+    background: transparent;
+    border: 2px solid #ff8000;
+    color: #ff8000;
+}
+
+.ctaButton.outline:hover {
+    background: #ff8000;
+    color: #fff;
+}
+
+.ctaButton:focus {
+    outline: 2px solid #ffa333;
+    outline-offset: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buttonWrapper {
+        flex-direction: column;
+    }
+}

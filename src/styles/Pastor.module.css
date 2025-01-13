@@ -1,0 +1,164 @@
+/* Pastor Section */
+.pastorSection {
+    padding: -200px 50px;
+    background-color: #f4f7fb; /* Light greyish background for a soft look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensures the content is stacked vertically */
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* New Heading Styling */
+  .headingWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; /* Space between heading and content */
+  }
+  
+  .sectionHeading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366; /* Deep blue for professionalism */
+    text-align: center;
+    /* text-transform: uppercase; */
+    position: relative;
+    padding: 10px;
+  }
+  
+  .sectionHeading::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #ff6600; /* Accent color */
+    margin: 5px auto;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .pastorImageWrapper {
+    flex: 1;
+    max-width: 40%;
+    padding: 20px;
+    border-radius: 12px; /* Removed black border */
+    animation: slideInLeft 1.2s ease-out;
+  }
+  
+  .pastorImage {
+    margin-top: -43px;
+    width: 76%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    /* box-shadow: 0 4px 8px rgba(61, 11, 210, 0.936); */
+    margin-left: -5px;
+  }
+  
+  .pastorImage:hover {
+    transform: scale(1.05);
+  }
+  
+  .pastorSummary {
+    margin-top: -47px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075);
+    margin-right: -25px;
+    flex: 1.5;
+    max-width: 55%;
+    padding: 30px; /* Increased padding for better space */
+    background-color: #ffffff; /* White background for text box */
+    border-radius: 12px; /* Removed black border */
+    animation: slideInRight 1.2s ease-out;
+  }
+  
+  .pastorTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #003366; /* Deep blue for professionalism */
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  
+  .name {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #003366;
+    font-weight: bolder;
+  }
+  
+  .pastorName {
+    font-size: 1.8rem; /* Slightly increased size for the name */
+    font-weight: 500;
+    color: #ff6600; /* A rich orange color to highlight the pastor’s name */
+    margin-bottom: 5px; /* Added margin for spacing */
+  }
+  
+  .pastorPosition {
+    margin-top: -15px;
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 2px; /* Increased margin for spacing */
+    font-weight: 400;
+  }
+  
+  .pastorBox {
+    
+    background-color: #f9f9f9;
+    line-height: 1.8; /* Increased line height for better readability */
+    padding: 20px;
+    margin: 5px 0; /* Increased space around the box */
+    border-radius: 10px; /* Removed black border */
+  }
+  
+  .pastorBox h4 {
+    margin-top: -2px;
+    font-size: 1.5rem; /* Larger size for heading inside the box */
+    color: #003366;
+    margin-bottom: 10px; /* Added spacing */
+  }
+  
+  .pastorBox p {
+    margin-top: -15px;
+    font-size: 1.1rem; /* Slightly larger text for the paragraph */
+    color: #555;
+    line-height: 1.8; /* Increased line height for better readability */
+    font-weight: 400;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  

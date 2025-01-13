@@ -1,0 +1,113 @@
+/* General Container Styling */
+.container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.heroImage {
+  margin-top: 60px;
+  width: 70%;
+  height: 500px;
+  object-fit: contain;
+  filter: brightness(120%);
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heroText h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.heroText p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+/* Heading Section */
+.heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #003366;
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background-color: #ff6600; /* Accent color */
+  margin: 5px auto;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+/* Card Grid */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Reduced the min-width of cards */
+  gap: 20px; /* Reduced the gap between cards */
+  padding: 20px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 15px; /* Added padding inside cards */
+}
+
+/* .card:hover {
+  transform: translateY(-5px);
+} */
+
+.cardImage {
+  width: 100%;
+  height: 140px; /* Reduced the height of the image */
+  object-fit: cover;
+}
+
+.cardTitle {
+  font-size: 1.1rem; /* Reduced the font size of the card title */
+  font-weight: bold;
+  color: #003366;
+  margin: 10px 0;
+}
+
+.prayerButton {
+  background-color: #003366;
+  color: white;
+  padding: 8px 18px; /* Reduced padding for smaller button */
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem; /* Reduced font size for the button */
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.prayerButton:hover {
+  background-color: #005cbf;
+  transform: translateY(-3px);
+}
