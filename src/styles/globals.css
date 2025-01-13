@@ -18,6 +18,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif; /* Ensure consistent font */
 }
 
 /* Optional: Ensures no horizontal overflow on the main content */
@@ -45,4 +47,179 @@ body {
   gap: 40px;
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+/* Hero Section */
+.heroPage {
+    overflow-x: hidden; /* Remove horizontal scroll */
+}
+
+.hero {
+    display: flex;
+    margin-bottom: -100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100vh;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Hero Content */
+.heroContent {
+    margin-left: 10px;
+    margin-top: -100px;
+    max-width: 50%;
+    animation: fadeIn 2s ease-out;
+    box-sizing: border-box;
+}
+
+.heroTitle {
+    font-size: 3.2rem;
+    color: #003060;
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 1.3;
+    animation: slideInLeft 1.5s ease-out;
+}
+
+/* Styling for the title, apply bold to specific words */
+.heroTitle .bold {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heroSubtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005080;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    animation: fadeIn 2.5s ease-out;
+}
+
+.heroDescription {
+    font-size: 1.3rem;
+    color: #173b45;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-family: 'Lora', serif;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Hero Buttons */
+.heroButtons {
+    display: flex;
+    gap: 20px;
+    animation: fadeIn 3.5s ease-out;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.button:first-child {
+    background: linear-gradient(45deg, #0056b3, #007fff);
+}
+
+.button:last-child {
+    background: linear-gradient(45deg, #ff8000, #ffb347);
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button:hover:after {
+    opacity: 1;
+}
+
+/* Hero Image */
+.heroImageWrapper {
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    margin-top: -50px;
+}
+
+.heroImageWrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(from 0deg, #ff8000, #ffb347, #ff8000);
+    border-radius: 50%;
+    animation: rotateCircle 4s linear infinite;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* Hero Image */
+.heroImage {
+    margin-top: -50px;
+    max-width: 45%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    filter: brightness(1.1);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
