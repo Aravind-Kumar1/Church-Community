@@ -3,13 +3,6 @@
     overflow-x: hidden; /* Remove horizontal scroll */
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Ensure overflow-x is hidden here as well */
-}
-
 /* Hero Section Styles */
 .hero {
     display: flex;
