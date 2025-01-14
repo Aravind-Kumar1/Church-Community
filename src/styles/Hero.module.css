@@ -13,7 +13,7 @@
   }
   
   .heroContent {
-    margin-left: 15px;
+    margin-left: 25px;
     flex: 1;
     max-width: 50%;
     padding-right: 20px;
@@ -91,6 +91,7 @@
   }
   
   .heroImage {
+  margin-top: 50px;
     max-width: 90%;
     height: auto;
     border-radius: 15px;
