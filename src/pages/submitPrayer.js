@@ -25,7 +25,7 @@ const SubmitPrayer = () => {
   }, [queryTopic]);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission
     setLoading(true);
 
     const emailData = {
