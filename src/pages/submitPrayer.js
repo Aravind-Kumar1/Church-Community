@@ -39,15 +39,15 @@ const SubmitPrayer = () => {
 
     try {
       const response = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        'service_hk4bk58', // Directly using the service ID
+        'template_i26yacp', // Directly using the template ID
         emailData,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        'MikydQenH8f_SH65S' // Directly using the user ID
       );
 
       if (response.status === 200) {
         setMessage('Prayer request sent successfully!');
-        router.push('/success');
+        router.push('/success'); // Navigate to success page
       } else {
         setMessage(`Error: ${response.text}`);
       }
@@ -56,6 +56,12 @@ const SubmitPrayer = () => {
       setMessage('Failed to send prayer request. Please try again.');
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSubmit(e); // Trigger form submission on Enter key
     }
   };
 
@@ -69,7 +75,7 @@ const SubmitPrayer = () => {
         </p>
       </div>
       {/* Form Element */}
-      <form onSubmit={handleSubmit} className={styles.formContainer}>
+      <form onSubmit={handleSubmit} onKeyDown={handleKeyDown} className={styles.formContainer}>
         {/* Full Name */}
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
