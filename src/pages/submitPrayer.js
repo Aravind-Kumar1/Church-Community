@@ -37,8 +37,6 @@ const SubmitPrayer = () => {
       topic,
     };
 
-    console.log('Sending data:', emailData);
-
     try {
       const response = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -70,7 +68,9 @@ const SubmitPrayer = () => {
           Please tell us your problem & get a call back from our prayer team.
         </p>
       </div>
+      {/* Form Element */}
       <form onSubmit={handleSubmit} className={styles.formContainer}>
+        {/* Full Name */}
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
             <label htmlFor="fullName" className={styles.formLabel}>Full Name</label>
@@ -84,7 +84,7 @@ const SubmitPrayer = () => {
               className={styles.formInput}
             />
           </div>
-
+          {/* Prayer For */}
           <div className={styles.formGroup}>
             <label htmlFor="prayerFor" className={styles.formLabel}>Prayer for Whom</label>
             <select
@@ -110,6 +110,7 @@ const SubmitPrayer = () => {
           </div>
         </div>
 
+        {/* City and Phone */}
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
             <label htmlFor="city" className={styles.formLabel}>City</label>
@@ -137,7 +138,6 @@ const SubmitPrayer = () => {
               <option value="Others">Others</option>
             </select>
           </div>
-
           <div className={styles.formGroup}>
             <label htmlFor="phone" className={styles.formLabel}>Phone Number (+91)</label>
             <input
@@ -152,6 +152,7 @@ const SubmitPrayer = () => {
           </div>
         </div>
 
+        {/* Prayer Request */}
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
             <label htmlFor="prayerRequest" className={styles.formLabel}>Enter Prayer Request (max 600 words)</label>
@@ -167,10 +168,13 @@ const SubmitPrayer = () => {
           </div>
         </div>
 
+        {/* Submit Button */}
         <button type="submit" className={styles.submitButton} disabled={loading}>
           {loading ? 'Submitting...' : 'Submit Prayer Request'}
         </button>
       </form>
+
+      {/* Message Display */}
       {message && <p>{message}</p>}
       <Footer />
     </div>
