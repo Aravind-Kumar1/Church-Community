@@ -98,3 +98,109 @@
   .number::before{
     word-spacing: 25px;
   }
+/* Mobile View Styles for About Section */
+@media screen and (max-width: 768px) {
+  .aboutSection {
+    padding: 50px 20px; /* Adjusted padding for mobile view */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Section Heading */
+  .sectionHeading {
+    font-size: 2rem; /* Reduced font size for mobile */
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px; /* Less margin for better spacing */
+  }
+
+  .sectionHeading::after {
+    width: 100px; /* Reduced the width of the underline */
+    margin: 10px auto;
+  }
+
+  /* Container Flex Layout */
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 30px; /* Adjusted gap for mobile */
+  }
+
+  /* Image Wrapper */
+  .imageWrapper {
+    flex: 1;
+    max-width: 100%; /* Full width for image */
+    padding: 0;
+  }
+
+  /* About Image */
+  .aboutImage {
+    margin-left: 155px;
+    width: 50%; /* Image width adjusted for mobile */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(231, 125, 26, 0.09);
+    transition: transform 0.3s ease;
+    filter: brightness(1);
+  }
+
+  .aboutImage:hover {
+    transform: scale(1.05);
+  }
+
+  /* About Text Box */
+  .aboutText {
+    margin-left: 25px;
+    flex: 1;
+    width: 90%; /* Full width for mobile */
+    max-width: 450px; /* Limit max width */
+    height: 350px; /* Set height equal to width for square shape */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Box Heading */
+  .boxHeading {
+    font-size: 1.6rem; /* Slightly reduced font size */
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* About Paragraph */
+  .aboutPara {
+    font-size: 1rem; /* Adjusted text size */
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Member Count */
+  .memberCount {
+    font-size: 1.2rem; /* Adjusted font size */
+    color: #003366;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .number {
+    font-size: 1.5rem; /* Adjusted size of the number */
+    color: #ff6600;
+    font-weight: bold;
+  }
+}

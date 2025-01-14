@@ -130,4 +130,187 @@
       opacity: 1;
     }
   }
-  
+/* Mobile View Styles for Hero Section */
+@media screen and (max-width: 768px) {
+  .heroSection {
+    padding: 50px 20px; /* Added padding for more breathing space */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 5px; /* Increased top margin for separation */
+  }
+
+  .heroContent {
+    margin-top: -40px;
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 60px; /* Increased margin for more space at the bottom */
+    text-align: center;
+  }
+
+  /* Hero Title */
+  .heroTitle {
+    font-size: 2.8rem; /* Increased font size for stronger emphasis */
+    margin-bottom: 20px;
+    color: #003060;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeInTop 1.5s ease-out; /* Top-notch fadeIn animation */
+  }
+
+  .heroTitle .bold {
+    font-weight: bold;
+    color: #005080;
+  }
+
+  /* Hero Subtitle */
+  .heroSubtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 25px; /* Increased margin for proper spacing */
+    font-style: italic;
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif;
+    animation: fadeIn 2s ease-in;
+  }
+
+  /* Hero Description */
+  .heroDescription {
+    font-size: 1.1rem;
+    color: #173b45;
+    line-height: 1.8;
+    margin-bottom: 80px; /* Increased space between description and buttons */
+    font-family: 'Lora', serif;
+    animation: fadeInUp 2.5s ease-out;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Animation for 'Building a Community of Grace and Hope' from Left to Right */
+  .communityText {
+    font-size: 1.6rem; /* Increased font size for prominence */
+    font-weight: 600;
+    color: #003060;
+    margin-top: 40px;
+    margin-bottom: 80px; /* Added margin for space before buttons */
+    animation: slideInFromLeft 2s ease-out;
+  }
+
+  /* Buttons: Side by side, responsive and modern */
+  .heroButtons {
+    margin-top: 60px; /* Increased margin for better spacing between description and buttons */
+    display: flex;
+    justify-content: center; /* Center aligned buttons */
+    gap: 25px;
+    max-width: 350px;
+    margin: 0 auto;
+    animation: fadeIn 3s ease-in-out;
+  }
+
+  /* Button Styling */
+  .button {
+    margin-top: 25px;
+    padding: 15px 20px; /* Adjusted padding for a more balanced button */
+    font-size: 0.9rem; /* Font size for readability */
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 35px; /* More rounded for a smooth, modern look */
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    width: 45%; /* Equal width for balance */
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .button:first-child {
+    background: linear-gradient(45deg, #0056b3, #007fff);
+  }
+
+  .button:last-child {
+    background: linear-gradient(45deg, #ff8000, #ffb347);
+  }
+
+  .button span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    background-color: #003060; /* Darken button on hover */
+  }
+
+  /* Hero Image Styling for Mobile */
+  .heroImageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    max-width: 100%;
+  }
+
+  .heroImage {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide-in from Left Animation */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

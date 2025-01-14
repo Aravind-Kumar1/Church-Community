@@ -162,3 +162,163 @@
     }
   }
   
+
+  /* Mobile View Styles for Pastor Section */
+@media screen and (max-width: 768px) {
+  .pastorSection {
+    padding: 30px 15px; /* Adjusted padding for a balanced mobile layout */
+    background-color: #f4f7fb; /* Light greyish background for a soft look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stacked vertically */
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  /* New Heading Styling */
+  .headingWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Reduced margin for mobile view */
+  }
+
+  .sectionHeading {
+    font-size: 2rem; /* Adjusted font size for mobile */
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+  }
+
+  .sectionHeading::after {
+    content: "";
+    display: block;
+    width: 100px; /* Reduced width for mobile */
+    height: 2px; /* Reduced line thickness */
+    background-color: #ff6600;
+    margin: 5px auto;
+  }
+
+  /* Container for Image and Text */
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+
+  /* Pastor Image */
+  .pastorImageWrapper {
+    flex: 1;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    animation: slideInLeft 1.2s ease-out;
+  }
+
+  .pastorImage {
+    width: 45%; /* Reduced image width for better mobile fit */
+    height: auto;
+    margin-left: 145px;
+    border-radius: 12px;
+    margin-top: -35px;
+    transition: transform 0.3s ease;
+  }
+
+  .pastorImage:hover {
+    transform: scale(1.05);
+  }
+
+  /* Pastor Summary */
+  .pastorSummary {
+    flex: 1.5;
+    max-width: 100%;
+    padding: 20px; /* Reduced padding for mobile */
+    background-color: #ffffff;
+    border-radius: 12px;
+    animation: slideInRight 1.2s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075);
+    margin-top: 20px; /* Added margin for space between image and text */
+  }
+
+  .pastorTitle {
+    font-size: 1.5rem; /* Slightly smaller title for mobile */
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 16px;
+  }
+
+  .name {
+    font-size: 1.3rem; /* Increased font size for name */
+    color: #003366;
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+
+  .pastorName {
+    font-size: 1.4rem; /* Slightly adjusted name size */
+    color: #ff6600;
+    margin-bottom: 10px;
+  }
+
+  .pastorPosition {
+    font-size: 0.9rem;
+    color: #333333;
+    margin-top: -10px;
+  }
+
+  .pastorBox {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    line-height: 1.8;
+  }
+
+  .pastorBox h4 {
+    font-size: 1.2rem;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+
+  .pastorBox p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
