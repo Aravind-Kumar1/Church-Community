@@ -78,10 +78,88 @@
     color: #ccc;
   }
   
-  @media (max-width: 768px) {
-    .footerContainer {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
+ /* Mobile View - 480px */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center text on mobile */
   }
-  
+
+  .footerContainer {
+    display: block; /* Stack footer sections vertically */
+    padding: 0 10px;
+  }
+
+  .footerSection {
+    margin-bottom: 30px; /* Add spacing between sections */
+  }
+
+  .footerSection h4 {
+    font-size: 1.3rem; /* Slightly smaller heading for mobile */
+    margin-bottom: 15px;
+  }
+
+  .footerSection p {
+    font-size: 0.9rem; /* Smaller text for mobile */
+    color: #ccc;
+  }
+
+  .footerLinks a {
+    font-size: 0.9rem; /* Smaller links for mobile */
+  }
+
+  .footerSocialIcons {
+    justify-content: space-evenly;
+  }
+
+  .footerSocialIcons a {
+    font-size: 1.3rem; /* Adjust icon size for mobile */
+  }
+
+  .footerCopyright {
+    font-size: 0.9rem; /* Smaller font size for copyright */
+  }
+}
+
+/* Mobile View - 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px; /* Adjust padding for 768px screens */
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout for medium mobile screens */
+    gap: 20px;
+  }
+
+  .footerSection {
+    margin-bottom: 20px; /* Spacing between sections */
+  }
+
+  .footerSection h4 {
+    font-size: 1.4rem; /* Adjust heading size for medium mobile */
+    margin-bottom: 18px;
+  }
+
+  .footerSection p {
+    font-size: 1rem; /* Regular text size for medium mobile */
+    color: #ccc;
+  }
+
+  .footerLinks a {
+    font-size: 1rem; /* Regular link size for medium mobile */
+  }
+
+  .footerSocialIcons {
+    justify-content: space-evenly;
+  }
+
+  .footerSocialIcons a {
+    font-size: 1.5rem; /* Slightly larger icon size for medium mobile */
+  }
+
+  .footerCopyright {
+    font-size: 1rem; /* Regular font size for copyright on 768px screens */
+  }
+}

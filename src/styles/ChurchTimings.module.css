@@ -185,3 +185,130 @@
   margin-right: 10px;
   color: #003366; /* Change color for diamond bullet */
 }
+
+
+@media (max-width: 768px) {
+  /* Common styles for both mobile and tablet */
+
+  .churchTimings {
+    padding: 30px 15px; /* Adjust padding for mobile (you can change this later for tablet) */
+    margin: 20px auto;
+  }
+
+  .sectionHeading {
+    font-size: 1.8rem; /* Smaller heading for mobile, can increase for tablet if necessary */
+    margin-bottom: 20px;
+    text-align: center; /* Center align the heading */
+  }
+
+  .timingsGrid {
+    grid-template-columns: 1fr; /* One column layout for mobile */
+    gap: 15px; /* Adjust gap between items */
+  }
+
+  .timingItem {
+    width: 100%; /* Full width for mobile screens */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 15px;
+    max-width: 100%; /* Remove any max-width constraint */
+  }
+
+  .timingTitle h3 {
+    font-size: 1.1rem; /* Smaller title font */
+    margin-bottom: 10px;
+  }
+
+  .timingDetails p {
+    font-size: 1rem; /* Smaller text for better readability */
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  .timingDetails ul li {
+    font-size: 1rem; /* Smaller list items */
+    margin: 8px 0;
+  }
+
+  .timingDetails ul li::before {
+    font-size: 1.2rem; /* Smaller diamond bullet */
+    margin-right: 8px;
+  }
+
+  .sunday, .tuesday, .wednesday, .friday, .firstOfMonth, .lastTuesday {
+    padding: 15px; /* Add padding inside the colored timing boxes */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 20px; /* Space between the items */
+  }
+
+  /* Reduce the size of the border-left for mobile */
+  .sunday, .tuesday, .wednesday, .friday, .firstOfMonth, .lastTuesday {
+    border-left: 4px solid; /* Make the left border thinner */
+  }
+
+  /* Adjust the underline for each day */
+  .sunday .timingTitle h3::after,
+  .tuesday .timingTitle h3::after,
+  .wednesday .timingTitle h3::after,
+  .friday .timingTitle h3::after,
+  .firstOfMonth .timingTitle h3::after,
+  .lastTuesday .timingTitle h3::after {
+    height: 2px; /* Smaller underline for mobile */
+  }
+
+  /* Tablet-Specific Adjustments */
+  @media (min-width: 481px) {
+    .churchTimings {
+      padding: 40px 20px; /* Adjust padding for tablet */
+      margin: 30px auto;
+    }
+
+    .sectionHeading {
+      font-size: 2rem; /* Medium heading for tablet */
+      margin-bottom: 25px;
+    }
+
+    .timingsGrid {
+      grid-template-columns: 1fr 1fr; /* Two columns layout for tablet */
+      gap: 20px; /* Slightly bigger gap between items */
+    }
+
+    .timingItem {
+      padding: 20px; /* Padding for tablet */
+    }
+
+    .timingTitle h3 {
+      font-size: 1.2rem; /* Slightly bigger title font for tablet */
+      margin-bottom: 15px;
+    }
+
+    .timingDetails p {
+      font-size: 1.1rem; /* Slightly bigger text for tablet */
+    }
+
+    .timingDetails ul li {
+      font-size: 1.1rem; /* Slightly bigger list items for tablet */
+    }
+
+    .timingDetails ul li::before {
+      font-size: 1.3rem; /* Slightly bigger diamond bullet for tablet */
+    }
+
+    .sunday, .tuesday, .wednesday, .friday, .firstOfMonth, .lastTuesday {
+      padding: 20px; /* Padding inside the colored timing boxes for tablet */
+      margin-bottom: 25px; /* Space between items */
+    }
+
+    .sunday, .tuesday, .wednesday, .friday, .firstOfMonth, .lastTuesday {
+      border-left: 5px solid; /* Make the left border thicker for tablet */
+    }
+
+    .sunday .timingTitle h3::after,
+    .tuesday .timingTitle h3::after,
+    .wednesday .timingTitle h3::after,
+    .friday .timingTitle h3::after,
+    .firstOfMonth .timingTitle h3::after,
+    .lastTuesday .timingTitle h3::after {
+      height: 3px; /* Slightly bigger underline for tablet */
+    }
+  }
+}

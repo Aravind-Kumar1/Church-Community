@@ -33,7 +33,7 @@
 }
 
 .arrowButton {
-  font-size: 2rem;
+  font-size: 1rem;
   background: #ff6600;
   border: none;
   color: white;
@@ -116,7 +116,7 @@
 }
 
 .testimonialText {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 20px;
   line-height: 1.6;
@@ -125,20 +125,28 @@
 }
 
 .testimonialAuthor {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #003366;
 }
 
 .testimonialRole {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #666;
   font-style: normal;
 }
 
+
 @media (max-width: 768px) {
   .testimonialWrapper {
     flex-direction: column;
+  }
+  .sectionHeading {
+    font-size: 2rem;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
   }
 
   .testimonialsContainer {
