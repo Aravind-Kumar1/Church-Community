@@ -162,16 +162,15 @@
     }
   }
   
-
-  /* Mobile View Styles for Pastor Section */
+/* Mobile View Styles for Pastor Section */
 @media screen and (max-width: 768px) {
   .pastorSection {
-    padding: 30px 15px; /* Adjusted padding for a balanced mobile layout */
-    background-color: #f4f7fb; /* Light greyish background for a soft look */
+    padding: 30px 15px;
+    background-color: #f4f7fb;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stacked vertically */
+    flex-direction: column;
     animation: fadeIn 1.5s ease-out;
   }
 
@@ -181,11 +180,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px; /* Reduced margin for mobile view */
+    margin-bottom: 30px;
   }
 
   .sectionHeading {
-    font-size: 2rem; /* Adjusted font size for mobile */
+    font-size: 2rem;
     font-weight: bold;
     color: #003366;
     text-align: center;
@@ -196,8 +195,8 @@
   .sectionHeading::after {
     content: "";
     display: block;
-    width: 100px; /* Reduced width for mobile */
-    height: 2px; /* Reduced line thickness */
+    width: 100px;
+    height: 2px;
     background-color: #ff6600;
     margin: 5px auto;
   }
@@ -206,8 +205,8 @@
   .container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     width: 100%;
     max-width: 1000px;
     padding: 0 20px;
@@ -215,7 +214,11 @@
 
   /* Pastor Image */
   .pastorImageWrapper {
+    margin-top: -20px;
     flex: 1;
+    display: flex; /* Ensures image is centered */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     max-width: 100%;
     padding: 10px;
     border-radius: 12px;
@@ -223,11 +226,10 @@
   }
 
   .pastorImage {
-    width: 45%; /* Reduced image width for better mobile fit */
+    width: 45%; /* Maintain proper width for mobile */
     height: auto;
-    margin-left: 145px;
     border-radius: 12px;
-    margin-top: -35px;
+    margin: 0 auto; /* Ensure it's centered horizontally */
     transition: transform 0.3s ease;
   }
 
@@ -238,31 +240,35 @@
   /* Pastor Summary */
   .pastorSummary {
     flex: 1.5;
+    display: flex; /* Ensures card is centered */
+    flex-direction: column; /* Maintain stacking of elements */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     max-width: 100%;
-    padding: 20px; /* Reduced padding for mobile */
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 12px;
     animation: slideInRight 1.2s ease-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075);
-    margin-top: 20px; /* Added margin for space between image and text */
+    margin: 20px 0; /* Adjusted for consistent spacing */
   }
 
   .pastorTitle {
-    font-size: 1.5rem; /* Slightly smaller title for mobile */
+    font-size: 1.5rem;
     font-weight: 600;
     color: #003366;
     margin-bottom: 16px;
   }
 
   .name {
-    font-size: 1.3rem; /* Increased font size for name */
+    font-size: 1.3rem;
     color: #003366;
     font-weight: bolder;
     margin-top: 10px;
   }
 
   .pastorName {
-    font-size: 1.4rem; /* Slightly adjusted name size */
+    font-size: 1.4rem;
     color: #ff6600;
     margin-bottom: 10px;
   }

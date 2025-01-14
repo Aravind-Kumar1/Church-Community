@@ -127,8 +127,8 @@
   .container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     max-width: 100%;
     gap: 30px; /* Adjusted gap for mobile */
   }
@@ -136,14 +136,16 @@
   /* Image Wrapper */
   .imageWrapper {
     flex: 1;
+    display: flex; /* Added flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     max-width: 100%; /* Full width for image */
     padding: 0;
   }
 
   /* About Image */
   .aboutImage {
-    margin-left: 155px;
-    width: 50%; /* Image width adjusted for mobile */
+    width: 70%; /* Increased image width for better visibility */
     height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(231, 125, 26, 0.09);
@@ -157,19 +159,18 @@
 
   /* About Text Box */
   .aboutText {
-    margin-left: 25px;
+    margin-left: 20px;
     flex: 1;
+    display: flex; /* Added flexbox for centering */
+    flex-direction: column; /* Stack elements inside vertically */
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
     width: 90%; /* Full width for mobile */
     max-width: 450px; /* Limit max width */
-    height: 350px; /* Set height equal to width for square shape */
     background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   /* Box Heading */

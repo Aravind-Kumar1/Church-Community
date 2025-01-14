@@ -130,6 +130,7 @@
       opacity: 1;
     }
   }
+
 /* Mobile View Styles for Hero Section */
 @media screen and (max-width: 768px) {
   .heroSection {
@@ -145,6 +146,7 @@
   }
 
   .heroContent {
+    margin-left: -5px;
     margin-top: -20px;
     max-width: 100%;
     padding-right: 0;
@@ -154,7 +156,7 @@
 
   /* Hero Title */
   .heroTitle {
-    font-size: 2.2rem; /* Increased font size for stronger emphasis */
+    font-size: 2rem; /* Increased font size for stronger emphasis */
     margin-bottom: 20px;
     color: #003060;
     font-weight: bold;
@@ -171,7 +173,7 @@
 
   /* Hero Subtitle */
   .heroSubtitle {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #555555;
     margin-bottom: 25px; /* Increased margin for proper spacing */
@@ -183,7 +185,7 @@
 
   /* Hero Description */
   .heroDescription {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #173b45;
     line-height: 1.8;
     margin-bottom: 80px; /* Increased space between description and buttons */
@@ -258,12 +260,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -70px;
+    margin-top: -50px; /* Adjusted margin for better alignment */
     max-width: 100%;
+    flex-direction: column;
   }
 
   .heroImage {
-    width: 90%;
+    width: 100%; /* Adjusted width to fit better */
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
