@@ -124,35 +124,62 @@
     }
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-   /* Make the main heading look bold and stunning */
-.mainHeading {
-    font-family: 'Cinzel', serif;  /* Premium font */
-    font-size: 4rem;  /* Larger size */
-    font-weight: bold; /* Bold for impact */
-    background: -webkit-linear-gradient(45deg, #ff7e5f, #feb47b); /* Vibrant gradient */
-    -webkit-background-clip: text; /* Clip background to the text */
-    background-clip: text;
-    color: transparent; /* Make the text color transparent to reveal the gradient */
-    letter-spacing: 2px;  /* Increase letter spacing */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 165, 0, 0.5); /* Glowing effect */
-    text-align: center;  /* Center the text */
-    margin-bottom: 20px;  /* Space between heading and subheading */
+ 
+/* Media Query for 768px screens */
+@media (max-width: 768px) {
+  .heroSection {
+    height: auto;
+    padding: 40px 15px;
   }
-  
-  
-    .subAbbreviation {
-      font-size: 1.6rem;
-    }
-  
-    .subHeading {
-      font-size: 1.4rem;
-    }
-  
-    .bibleVerse {
-      font-size: 1.2rem;
-      padding: 10px 15px;
-    }
+
+  .mainHeading {
+    font-size: 2.5rem; /* Slightly smaller size for tablet */
+    margin-bottom: 15px;
   }
-  
+
+  .subAbbreviation {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .subHeading {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .bibleVerse {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+/* Media Query for 480px screens */
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 30px 10px;
+  }
+
+  .mainHeading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .subAbbreviation {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .subHeading {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .bibleVerse {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .bibleVerse .reference {
+    font-size: 1rem;
+  }
+}

@@ -1,6 +1,7 @@
 'use client';
 
 import styles from '../styles/AboutHero.module.css';
+import '../styles/global.css';
 
 const AboutHero = () => {
   return (

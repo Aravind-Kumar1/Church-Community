@@ -135,7 +135,6 @@
 }
 
 
-
 /* Mobile View Styles for 480px Screen */
 @media screen and (max-width: 480px) {
   .header {
@@ -230,11 +229,10 @@
 
   /* Navigation links styling */
   .navLinks {
-    margin-left: 100px;
     position: absolute;
     top: 50px;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the menu */
     background-color: #ffffff;
     flex-direction: column;
     gap: 10px;
@@ -249,7 +247,7 @@
 
   /* Mobile Navigation Links Styling */
   .navLinks li a {
-    margin-left: 100px;
+    margin-left: 0; /* Removed margin-left to center the items */
     font-size: 10px; /* Adjusted for readability */
     padding: 6px 0;
     text-align: left;
@@ -371,8 +369,8 @@
   .navLinks {
     position: absolute;
     top: 55px;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(70%); /* Center the menu */
     background-color: #ffffff;
     flex-direction: column;
     gap: 12px;
@@ -387,7 +385,7 @@
 
   /* Mobile Navigation Links Styling */
   .navLinks li a {
-    margin-left: 20px;
+    margin-left: 0; /* Removed margin-left to center the items */
     font-size: 12px; /* Adjusted for readability */
     padding: 8px 0;
     text-align: left;

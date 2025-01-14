@@ -85,15 +85,64 @@
     text-align: left;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+
+/* Mobile View Styles for 768px Screen */
+@media screen and (max-width: 768px) {
+    .missionVisionSection {
+        padding: 60px 20px; /* Adjusted padding for mobile */
+    }
+
+    .sectionTitle {
+        font-size: 2rem; /* Slightly larger font size */
+    }
+
+    .sectionTagline {
+        font-size: 1.2rem; /* Adjusted font size */
+        margin-bottom: 20px; /* Reduced space */
+    }
+
     .contentWrapper {
         flex-direction: column;
         align-items: center;
     }
 
     .box {
-        max-width: 90%;
+        max-width: 90%; /* Increased box width for mobile */
         margin-bottom: 20px;
+        padding: 20px; /* Adjusted padding */
+    }
+}
+
+/* Mobile View Styles for 480px Screen */
+@media screen and (max-width: 480px) {
+    .missionVisionSection {
+        padding: 50px 15px; /* Adjusted padding for smaller screens */
+    }
+
+    .sectionTitle {
+        font-size: 1.8rem; /* Adjusted font size for very small screens */
+    }
+
+    .sectionTagline {
+        font-size: 1rem; /* Smaller font size */
+        margin-bottom: 20px; /* Adjusted margin */
+    }
+
+    .contentWrapper {
+        padding: 0 10px; /* Reduced padding for small screens */
+    }
+
+    .box {
+        padding: 15px; /* Reduced padding */
+        min-width: 250px; /* Reduced min-width */
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .boxHeading {
+        font-size: 1.5rem; /* Adjusted heading size */
+    }
+
+    .boxText {
+        font-size: 1rem; /* Adjusted text size */
     }
 }
