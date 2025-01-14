@@ -145,7 +145,7 @@
   }
 
   .heroContent {
-    margin-top: -40px;
+    margin-top: -20px;
     max-width: 100%;
     padding-right: 0;
     margin-bottom: 60px; /* Increased margin for more space at the bottom */
@@ -154,7 +154,7 @@
 
   /* Hero Title */
   .heroTitle {
-    font-size: 2.8rem; /* Increased font size for stronger emphasis */
+    font-size: 2.2rem; /* Increased font size for stronger emphasis */
     margin-bottom: 20px;
     color: #003060;
     font-weight: bold;
@@ -183,7 +183,7 @@
 
   /* Hero Description */
   .heroDescription {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #173b45;
     line-height: 1.8;
     margin-bottom: 80px; /* Increased space between description and buttons */
@@ -218,7 +218,7 @@
   .button {
     margin-top: 25px;
     padding: 15px 20px; /* Adjusted padding for a more balanced button */
-    font-size: 0.9rem; /* Font size for readability */
+    font-size: 0.8rem; /* Font size for readability */
     font-weight: 600;
     color: white;
     border: none;

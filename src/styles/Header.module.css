@@ -133,7 +133,6 @@
 .ctaButton:active {
   transform: scale(1);  /* Maintain size on click */
 }
-
 /* Mobile View Styles */
 @media screen and (max-width: 768px) {
   .header {
@@ -144,44 +143,28 @@
     position: relative;
   }
 
-  /* Menu Icon Styling (on the left) */
-  .menuIcon {
-    font-size: 30px;
-    color: #003060;
-    cursor: pointer;
-    display: block;
-    z-index: 1100;
-    padding: 8px;
-    position: absolute;
-    left: 20px; /* Position the menu icon on the left */
-  }
-
-  .menuIcon .line {
-    width: 30px;
-    height: 4px;
-    background-color: #003060;
-    margin: 5px 0;
-    border-radius: 4px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  /* Logo and Name Styling (centered next to menu) */
+  /* Logo and Name Styling (on the left) */
   .logo {
+    margin-left: -15px;
     display: flex;
     align-items: center;
-    margin-left: 60px; /* Adjust position to leave space for the menu icon */
+  }
+
+  .logo img {
+    margin-right: 5px;
+    width: 40px;
+    height: auto;
   }
 
   .logoTextContainer {
+    margin-left: 2px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 10px;
-    font-size: 12px;  /* Reduce the size of the logo text for mobile */
+    font-size: 12px; /* Reduce the size of the logo text for mobile */
   }
 
   .logoText {
-    font-size: 18px;  /* Adjusted for mobile */
+    font-size: 18px; /* Adjusted for mobile */
     font-weight: bold;
     color: #173B45;
     text-transform: uppercase;
@@ -189,7 +172,7 @@
   }
 
   .subtitle {
-    font-size: 10px;  /* Adjusted for mobile */
+    font-size: 10px; /* Adjusted for mobile */
     font-weight: 500;
     color: #555555;
     margin-top: 2px;
@@ -197,10 +180,55 @@
     line-height: 1.4;
   }
 
+  /* Get Involved Button in the Center */
+  .ctaButtonContainer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .ctaButton {
+    margin-right: -170px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    background-color: #FF8225;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .ctaButton:hover {
+    background-color: #E6711C;
+  }
+
+  /* Menu Icon on the Right */
+  .menuIcon {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    z-index: 1100;
+  }
+
+  .menuIcon .line {
+    width: 25px;
+    height: 3px;
+    background-color: #003060;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
   /* Navigation links styling */
   .navLinks {
     position: absolute;
-    top: 65px; /* Adjust position for the mobile view */
+    top: 55px; /* Adjust position for the mobile view */
     left: 0;
     right: 0;
     background-color: #ffffff;
@@ -217,7 +245,8 @@
 
   /* Mobile Navigation Links Styling */
   .navLinks li a {
-    font-size: 16px;
+    margin-left: 30px;
+    font-size: 14px;
     padding: 10px 0;
     text-align: center;
     color: #003060;
@@ -232,22 +261,8 @@
     color: #FF8225; /* Highlight the link on hover with color */
   }
 
-  /* Styling for active menu link (text highlight without underline) */
   .navLinks li a.active {
     color: #FF8225; /* Highlight active link with color */
-  }
-
-  /* Get Involved Button Styling (on the right) */
-  .ctaButtonContainer {
-    position: absolute;
-    right: 20px; /* Position the Get Involved button at the right end */
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Remove the Get Involved button from the header */
-  .ctaButtonContainer {
-    display: block; /* Show the Get Involved button in the right corner */
   }
 
   /* Disable underline for mobile */
