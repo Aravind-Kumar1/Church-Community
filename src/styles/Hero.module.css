@@ -1,82 +1,62 @@
-/* Additional Fix for Horizontal Overflow */
-.heroPage {
-    
-    overflow-x: hidden; /* Remove horizontal scroll */
-}
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 20320cec99d58e18cfbf1da3d0382531cbd5c3c7
-/* Hero Section Styles */
 .heroSection {
-    
-    margin-top: 50px;
     display: flex;
-    margin-bottom: -50px;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
     height: 100vh;
-    background: none;  /* Removed the background gradient */
-    font-family: 'Roboto', sans-serif;  /* More elegant font */
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     overflow: hidden;
-    max-width: 100%;  /* Ensure that content doesn't exceed the viewport */
-}
-
-/* Hero Content */
-.heroContent {
-    margin-left: 10px;
-    margin-top: -100px;
+    max-width: 100%;
+  }
+  
+  .heroContent {
+    flex: 1;
     max-width: 50%;
-    animation: fadeIn 2s ease-out;
-    box-sizing: border-box;
-}
-
-.heroTitle {
+    padding-right: 20px;
+  }
+  
+  .heroTitle {
     font-size: 3.2rem;
     color: #003060;
     margin-bottom: 20px;
-    font-weight: normal;  /* Keep the rest normal */
     line-height: 1.3;
-    animation: slideInLeft 1.5s ease-out;
-}
-
-/* Styling for the title, apply bold to specific words */
-.heroTitle .bold {
+    font-family: 'Roboto', sans-serif;
+    animation: slideInLeft 1.5s ease-out; /* Sliding in from the left */
+  }
+  
+  .heroTitle .bold {
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;  /* Use a clean, modern font for bold words */
-}
-
-.heroSubtitle {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .heroSubtitle {
     font-size: 1.5rem;
     font-weight: bold;
     color: #005080;
     margin-bottom: 15px;
     font-style: italic;
-    font-family: 'Playfair Display', serif; /* Elegant serif font for subtitle */
-    animation: fadeIn 2.5s ease-out;
-}
-
-.heroDescription {
+    font-family: 'Playfair Display', serif;
+    animation: fadeIn 2s ease-in; /* Fading in with a smooth ease-in */
+  }
+  
+  .heroDescription {
     font-size: 1.3rem;
     color: #173b45;
     line-height: 1.8;
     margin-bottom: 30px;
-    font-family: 'Lora', serif; /* Timeless serif font for description text */
-    animation: fadeIn 3s ease-out;
-    font-style: normal; /* Keep it normal for readability */
-}
-
-/* Hero Buttons */
-.heroButtons {
+    font-family: 'Lora', serif;
+    animation: fadeInUp 2.5s ease-out; /* Fading in and moving up */
+  }
+  
+  .heroButtons {
     display: flex;
     gap: 20px;
-    animation: fadeIn 3.5s ease-out;
-}
-
-.button {
+    animation: fadeIn 3s ease-in-out; /* Buttons fade in smoothly */
+  }
+  
+  .button {
     padding: 15px 30px;
     font-size: 1rem;
     font-weight: bold;
@@ -86,109 +66,65 @@
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.2s ease;
     position: relative;
-}
-
-.button:first-child {
+  }
+  
+  .button:first-child {
     background: linear-gradient(45deg, #0056b3, #007fff);
-}
-
-.button:last-child {
+  }
+  
+  .button:last-child {
     background: linear-gradient(45deg, #ff8000, #ffb347);
-}
-
-.button:hover {
+  }
+  
+  .button:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-}
-
-.button:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-    border-radius: 30px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.button:hover:after {
-    opacity: 1;
-}
-
-/* Hero Image */
-.heroImageWrapper {
-    margin-right: 10px;
-    position: relative;
-    display: inline-block;
-    margin-top: -50px;
-}
-
-.heroImageWrapper::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 250px; /* Size of the circular line */
-    height: 250px;
-    background: conic-gradient(from 0deg, #ff8000, #ffb347, #ff8000);
-    border-radius: 50%;
-    animation: rotateCircle 4s linear infinite;
-    transform: translate(-50%, -50%);
-    z-index: 0; /* Place behind the image */
-}
-
-/* Hero Image */
-.heroImage {
-    margin-top: -50px;
-    max-width: 45%;
+  }
+  
+  .heroImageWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heroImage {
+    max-width: 90%;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 1;
     filter: brightness(1.1);
-}
-
-/* Keyframe Animations */
-@keyframes fadeIn {
+  }
+  
+  /* Keyframe Animations */
+  @keyframes slideInLeft {
     from {
-        opacity: 0;
+      transform: translateX(-50%);
+      opacity: 0;
     }
     to {
-        opacity: 1;
+      transform: translateX(0);
+      opacity: 1;
     }
-}
-
-@keyframes slideInLeft {
+  }
+  
+  @keyframes fadeIn {
     from {
-        transform: translateX(-50%);
-        opacity: 0;
+      opacity: 0;
     }
     to {
-        transform: translateX(0);
-        opacity: 1;
+      opacity: 1;
     }
-}
-
-@keyframes slideInRight {
+  }
+  
+  @keyframes fadeInUp {
     from {
-        transform: translateX(50%);
-        opacity: 0;
+      transform: translateY(20px);
+      opacity: 0;
     }
     to {
-        transform: translateX(0);
-        opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
     }
-}
-
-@keyframes rotateCircle {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+  }
+  

@@ -10,11 +10,13 @@
   --background: #fff;
 }
 
-<<<<<<< HEAD
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
 
-
-=======
->>>>>>> 20320cec99d58e18cfbf1da3d0382531cbd5c3c7
 /* Hero Section */
 .heroSection {
   text-align: center;
@@ -94,7 +96,6 @@
 }
 
 .formTextarea {
-  margin-top: 3px;
   resize: vertical;
   min-height: 120px;
 }
