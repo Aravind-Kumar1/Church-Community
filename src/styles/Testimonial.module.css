@@ -136,37 +136,162 @@
   font-style: normal;
 }
 
-
-@media (max-width: 768px) {
+/* Responsive Design for 480px screens */
+@media (max-width: 480px) {
   .testimonialWrapper {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 15px; /* Added padding for a balanced mobile view */
   }
+
   .sectionHeading {
-    font-size: 2rem;
+    font-size: 1.6rem; /* Adjusted title size for small screens */
     color: #003366;
     font-weight: bold;
-    margin-bottom: 30px;
-    position: relative;
+    margin-bottom: 15px; /* Reduced margin for a compact layout */
+    text-align: center; /* Center aligned */
   }
 
   .testimonialsContainer {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; /* Adequate gap for better readability */
+    align-items: center;
+  }
+
+  .arrowButton.left,
+  .arrowButton.right {
+    width: 20px; /* Fixed width for consistent button size */
+    height: 20px;
+    background-color: #ff8000; /* Orange color for visibility */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: auto;
+    bottom: 10px; /* Slightly raised the buttons */
   }
 
   .arrowButton.left {
-    left: 10px;
-    top: auto;
-    bottom: 20px;
+    left: 10px; /* Adjusted left position */
   }
 
   .arrowButton.right {
-    right: 10px;
-    top: auto;
-    bottom: 20px;
+    right: 10px; /* Adjusted right position */
   }
 
   .testimonialCard {
     width: 100%;
+    max-width: 350px; /* Limit width to prevent overly stretched cards */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for a clean look */
+    text-align: center;
+  }
+
+  .testimonialCard img {
+    width: 80px; /* Image size */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .testimonialText {
+    font-size: 1rem;
+    color: #555555; /* Light gray color for text */
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .testimonialName {
+    font-size: 1.1rem;
+    color: #003366;
+    font-weight: bold;
+  }
+}
+
+/* Responsive Design for 768px screens */
+@media (max-width: 768px) {
+  .testimonialWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .sectionHeading {
+    font-size: 1.8rem; /* Adjusted title size for medium screens */
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Center aligned for better visibility */
+  }
+
+  .testimonialsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .arrowButton.left,
+  .arrowButton.right {
+    width: 40px; /* Slightly larger button for better visibility */
+    height: 40px;
+    background-color: #ff8000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+  }
+
+  .arrowButton.left {
+    left: 15px; /* Adjusted position */
+  }
+
+  .arrowButton.right {
+    right: 15px; /* Adjusted position */
+  }
+
+  .testimonialCard {
+    width: 100%;
+    max-width: 400px; /* Adjusted max-width for better card display */
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .testimonialCard img {
+    width: 100px; /* Adjusted image size */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .testimonialText {
+    font-size: 1.1rem;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .testimonialName {
+    font-size: 1.2rem; /* Adjusted name font size */
+    color: #003366;
+    font-weight: bold;
   }
 }

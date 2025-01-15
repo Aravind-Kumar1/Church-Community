@@ -13,7 +13,7 @@
 }
 
 .heroImage {
-  margin-top: 60px;
+  margin-top: 80px;
   width: 70%;
   height: 500px;
   object-fit: contain;
@@ -110,4 +110,40 @@
 .prayerButton:hover {
   background-color: #005cbf;
   transform: translateY(-3px);
+}
+/* Mobile-specific Hero Image for 768px and below */
+@media (max-width: 768px) {
+  .heroImage {
+    display: none; /* Hide the desktop image for mobile */
+  }
+  .heroImageMobile {
+    display: block; /* Show the mobile-specific image */
+    margin-top: 30px;
+    width: 100%;
+    height: 280px; /* Adjust height as needed */
+    object-fit: cover;
+    filter: brightness(120%);
+  }
+}
+
+@media (min-width: 769px) {
+  .heroImageMobile {
+    display: none; /* Ensure the mobile image does not display on larger screens */
+  }
+}
+
+/* Mobile-specific Hero Image for 480px and below */
+@media (max-width: 480px) {
+  .heroImage {
+    display: none; /* Hide the desktop image for small screens */
+  }
+  .heroImageMobile {
+    background-color: #ffffff;
+    display: block; /* Show the mobile-specific image */
+    margin-top: 20px; /* Adjust margin for very small screens */
+    width: 100%;
+    height: 200px; /* Adjust height for small devices */
+    object-fit: cover; /* Ensure the image fits well */
+    filter: brightness(120%);
+  }
 }

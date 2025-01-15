@@ -1,4 +1,3 @@
-// pages/prayer.js
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -23,10 +22,17 @@ const PrayerRequests = () => {
     <div>
       <Header />
       <div className={styles.hero}>
+        {/* Desktop Hero Image */}
         <img
           src="./ban.png"
           alt="Prayer Banner"
           className={styles.heroImage}
+        />
+        {/* Mobile Hero Image */}
+        <img
+          src="./pray.jpg"
+          alt="Prayer Banner for Mobile"
+          className={styles.heroImageMobile}
         />
       </div>
       <div className={styles.container}>
