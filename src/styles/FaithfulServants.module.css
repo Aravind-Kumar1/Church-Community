@@ -198,7 +198,7 @@
     }
 
     .sectionTitle {
-        font-size: 2rem; /* Smaller title size for very small screens */
+        font-size: 1.9rem; /* Smaller title size for very small screens */
         margin-bottom: 10px;
     }
 
@@ -228,24 +228,24 @@
         order: 2; /* Ensures text card is at the bottom */
         width: 100%;
         max-width: 95%; /* Slight margin */
-        margin: 0 auto;
+        margin: 20 auto;
         padding: 15px; /* Minimal padding */
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Lighter shadow */
     }
 
     .heading {
-        font-size: 1.1rem; /* Smaller heading size */
+        font-size: 1.3rem; /* Smaller heading size */
         margin-bottom: 8px;
     }
 
     .text {
-        font-size: 0.8rem; /* Adjust text size for readability */
+        font-size: 0.9rem; /* Adjust text size for readability */
         line-height: 1.6;
         margin-bottom: 15px;
     }
 
     .nameHighlight {
-        font-size: 0.9rem; /* Slightly smaller highlighted text */
+        font-size: 1rem; /* Slightly smaller highlighted text */
     }
 
     .imageWrapper {

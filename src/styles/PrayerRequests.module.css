@@ -126,24 +126,186 @@
   }
 }
 
-@media (min-width: 769px) {
+/* Mobile-specific Hero Image for 768px and below */
+@media (max-width: 768px) {
+  .heroImage {
+    display: none; /* Hide the desktop image for mobile */
+  }
+
   .heroImageMobile {
-    display: none; /* Ensure the mobile image does not display on larger screens */
+    display: block; /* Show the mobile-specific image */
+    margin-top: 20px;
+    width: 100%;
+    height: 250px; /* Adjust height for mobile */
+    object-fit: cover;
+    filter: brightness(120%);
+  }
+
+  /* Heading Section */
+  .heading {
+    font-size: 1.8rem; /* Adjust font size for mobile */
+    margin-bottom: 10px;
+    color: #003366;
+    text-align: center; /* Center heading */
+  }
+
+  .heading::after {
+    content: "";
+    display: block;
+    width: 120px; /* Adjusted for mobile */
+    height: 3px;
+    background-color: #ff6600;
+    margin: 10px auto; /* Center the line */
+  }
+
+  /* Description Section */
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center; /* Center text */
+  }
+
+  /* Card Grid */
+  .cardGrid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 15px; /* Reduced gap between cards */
+    padding: 15px;
+    justify-items: center; /* Center cards */
+  }
+
+  /* Card Styling */
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    padding: 12px; /* Padding inside the card */
+    width: 100%; /* Ensure full width */
+    max-width: 320px; /* Limit max width for cards */
+  }
+
+  /* Adjust the card images for better clarity and fit */
+  .cardImage {
+    width: 100%;
+    height: 200px; /* Adjust height for a better fit */
+    object-fit: cover; /* Ensure image fills the area without distortion */
+    object-position: center; /* Center the image inside the card */
+  }
+
+  .cardTitle {
+    font-size: 1rem; /* Adjusted title font size */
+    font-weight: bold;
+    color: #003366;
+    margin: 10px 0;
+  }
+
+  .prayerButton {
+    background-color: #003366;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .prayerButton:hover {
+    background-color: #005cbf;
+    transform: translateY(-3px);
   }
 }
 
 /* Mobile-specific Hero Image for 480px and below */
 @media (max-width: 480px) {
-  .heroImage {
-    display: none; /* Hide the desktop image for small screens */
-  }
   .heroImageMobile {
-    background-color: #ffffff;
     display: block; /* Show the mobile-specific image */
-    margin-top: 20px; /* Adjust margin for very small screens */
+    margin-top: 0px;
     width: 100%;
-    height: 200px; /* Adjust height for small devices */
-    object-fit: cover; /* Ensure the image fits well */
+    height: 200px; /* Adjust height for smaller devices */
+    object-fit: cover;
     filter: brightness(120%);
+  }
+
+  /* Heading Section */
+  .heading {
+    font-size: 1.5rem; /* Smaller heading font */
+    margin-bottom: 10px;
+    color: #003366;
+    text-align: center; /* Center heading */
+  }
+
+  .heading::after {
+    content: "";
+    display: block;
+    width: 100px; /* Adjusted for smaller screens */
+    height: 3px;
+    background-color: #ff6600;
+    margin: 10px auto; /* Center the line */
+  }
+
+  /* Description Section */
+  .description {
+    font-size: 0.9rem; /* Smaller font size */
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center; /* Center text */
+  }
+
+  /* Card Grid */
+  .cardGrid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 10px; /* Reduced gap between cards */
+    padding: 20px 10px;
+    justify-items: center; /* Center cards */
+  }
+
+  /* Card Styling */
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%; /* Ensure full width */
+    max-width: 280px; /* Limit max width for cards */
+  }
+
+  /* Adjust the card images for better clarity and fit */
+  .cardImage {
+    width: 100%;
+    height: 150px; /* Adjusted height for smaller screens */
+    object-fit: cover; /* Ensure image fills the area without distortion */
+    object-position: center; /* Center the image inside the card */
+  }
+
+  .cardTitle {
+    font-size: 0.9rem; /* Smaller title font size */
+    font-weight: bold;
+    color: #003366;
+    margin: 8px 0;
+  }
+
+  .prayerButton {
+    background-color: #003366;
+    color: white;
+    padding: 6px 14px; /* Smaller padding */
+    border: none;
+    border-radius: 20px;
+    font-size: 0.85rem; /* Smaller font size */
+    margin: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .prayerButton:hover {
+    background-color: #005cbf;
+    transform: translateY(-3px);
   }
 }

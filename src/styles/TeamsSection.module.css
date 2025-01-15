@@ -115,6 +115,7 @@
 /* Section Styles for 480px screens */
 @media (max-width: 480px) {
     .teamsSection {
+        margin-top: -50px;
         background: #ffffff;
         padding: 20px 10px; /* Reduced padding for small screens */
         text-align: center;
@@ -144,7 +145,7 @@
 
     /* Section Tagline */
     .sectionTagline {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         font-family: 'Roboto', sans-serif;
         color: #173b45;
         margin-bottom: 20px;
