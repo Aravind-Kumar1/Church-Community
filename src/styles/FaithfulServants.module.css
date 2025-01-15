@@ -125,16 +125,134 @@
     border-radius: 15px;
 }
 
-/* Responsive Design */
+/* Responsive Design for 768px screens */
 @media (max-width: 768px) {
+    .servantsSection {
+        padding: 60px 15px; /* Adjust padding for tablets */
+    }
+
+    .sectionTitle {
+        font-size: 2.5rem; /* Adjust title size */
+        margin-bottom: 15px;
+    }
+
+    .sectionTagline {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
     .contentWrapper {
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically */
+        gap: 25px; /* Adjust gap */
         align-items: center;
     }
 
-    .textCard,
+    /* Move image card to the top and text card to the bottom */
     .imageCard {
+        order: 1; /* Ensures image card is at the top */
+        width: 100%;
         max-width: 90%;
-        margin-bottom: 30px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    }
+
+    .textCard {
+        order: 2; /* Ensures text card is at the bottom */
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    }
+
+    .heading {
+        font-size: 1.8rem; /* Adjust heading size */
+        margin-bottom: 10px;
+    }
+
+    .text {
+        font-size: 1rem; /* Adjust paragraph size */
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .nameHighlight {
+        font-size: 1.1rem; /* Adjust highlighted text size */
+    }
+
+    .imageWrapper {
+        height: 250px; /* Adjust image container */
+    }
+
+    .image {
+        border-radius: 10px; /* Slightly rounded border */
+    }
+}
+
+/* Responsive Design for 480px screens */
+@media (max-width: 480px) {
+    .servantsSection {
+        padding: 40px 10px; /* Reduce padding significantly for smaller screens */
+    }
+
+    .sectionTitle {
+        font-size: 2rem; /* Smaller title size for very small screens */
+        margin-bottom: 10px;
+    }
+
+    .sectionTagline {
+        font-size: 1rem; /* Adjust tagline font size */
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    .contentWrapper {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Reduce gap further */
+        align-items: center;
+    }
+
+    /* Move image card to the top and text card to the bottom */
+    .imageCard {
+        order: 1; /* Ensures image card is at the top */
+        width: 100%;
+        max-width: 95%; /* Slight margin */
+        margin: 0 auto;
+        padding: 15px; /* Minimal padding */
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+    }
+
+    .textCard {
+        order: 2; /* Ensures text card is at the bottom */
+        width: 100%;
+        max-width: 95%; /* Slight margin */
+        margin: 0 auto;
+        padding: 15px; /* Minimal padding */
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+    }
+
+    .heading {
+        font-size: 1.1rem; /* Smaller heading size */
+        margin-bottom: 8px;
+    }
+
+    .text {
+        font-size: 0.8rem; /* Adjust text size for readability */
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .nameHighlight {
+        font-size: 0.9rem; /* Slightly smaller highlighted text */
+    }
+
+    .imageWrapper {
+        height: 180px; /* Smaller image container */
+    }
+
+    .image {
+        border-radius: 8px; /* Smaller border radius */
     }
 }

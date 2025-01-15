@@ -81,9 +81,50 @@
     outline-offset: 4px;
 }
 
-/* Responsive Design */
+/* Responsive Design for 768px screens (tablets) */
 @media (max-width: 768px) {
+    .callToActionTitle {
+        font-size: 1.8rem; /* Slightly smaller title size for tablets */
+    }
+
+    .callToActionTagline {
+        font-size: 1.1rem; /* Adjust tagline size */
+        margin-bottom: 18px;
+    }
+
     .buttonWrapper {
-        flex-direction: column;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 20px; /* Adjusted gap for stacking buttons */
+    }
+
+    .ctaButton {
+        padding: 15px 35px; /* Adjust button size for better clickability */
+        font-size: 1.2rem; /* Slightly larger text for buttons */
+    }
+}
+
+/* Responsive Design for 480px screens (small mobile phones) */
+@media (max-width: 480px) {
+    .callToActionSection {
+        padding: 25px 10px; /* Less padding for very small screens */
+    }
+
+    .callToActionTitle {
+        font-size: 1.5rem; /* Further reduced title size for very small screens */
+    }
+
+    .callToActionTagline {
+        font-size: 0.9rem; /* Smaller tagline text */
+        margin-bottom: 15px;
+    }
+
+    .buttonWrapper {
+        flex-direction: column; /* Stack buttons vertically for very small screens */
+        gap: 15px; /* Reduced the gap between buttons */
+    }
+
+    .ctaButton {
+        padding: 12px 25px; /* Adjust button size for smaller devices */
+        font-size: 1rem; /* Adjust font size for smaller buttons */
     }
 }

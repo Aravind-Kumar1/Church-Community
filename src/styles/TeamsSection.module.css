@@ -112,31 +112,228 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carouselContainer {
-        height: 400px; /* Adjusted height on mobile */
+/* Section Styles for 480px screens */
+@media (max-width: 480px) {
+    .teamsSection {
+        background: #ffffff;
+        padding: 20px 10px; /* Reduced padding for small screens */
+        text-align: center;
     }
 
-    .carouselImageCard {
-        width: 70%; /* Adjusted image width for mobile */
-        height: 70%; /* Adjusted image height for mobile */
-    }
-
-    .carouselImageItem {
-        border-radius: 12px; /* Smaller border-radius for mobile */
-    }
-
+    /* Section Title */
     .sectionTitle {
-        font-size: 2rem; /* Smaller title size for mobile */
+        font-size: 1.6rem; /* Reduced font size */
+        font-family: 'Playfair Display', serif;
+        color: #003060;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        position: relative;
+        display: inline-block;
     }
 
+    .sectionTitle::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 3px;
+        background: #ff8000;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Section Tagline */
     .sectionTagline {
-        font-size: 1.3rem; /* Smaller tagline font size for mobile */
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+        color: #173b45;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        line-height: 1.4;
+        font-style: italic;
+    }
+
+    /* Carousel Container */
+    .carouselContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 400px; /* Adjusted height for better image visibility */
+        margin: 0 auto;
+        overflow: hidden; /* Prevents image overflow */
+    }
+
+    /* Image Wrapper */
+    .imageWrapper {
+        display: flex;
+        transition: transform 1s ease;
+        position: relative;
+        width: 100%; /* Ensure full width */
+        height: 100%; /* Ensure full height */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Image Card */
+    .carouselImageCard {
+        margin-top: 0px; /* Adjusted to ensure image is centered */
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        position: absolute;
+        top: 0;
+        width: 100%; /* Adjusted width to ensure visibility */
+        height: 100%; /* Adjusted height to fit properly */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 15px; /* Rounded corners for better appearance */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transform: scale(0.95);
+    }
+
+    .carouselImageCard.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /* Image Item */
+    .carouselImageItem {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image fills the container without overflow */
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Team Names Wrapper */
+    .teamNamesWrapper {
+        margin-top: 10px; /* Reduced margin-top to bring team name closer */
     }
 
     .teamHeading {
-        font-size: 2rem; /* Adjusted heading size for mobile */
+        margin-left: 10px;
+        margin-top: -160px; /* Reduced margin-top for closer alignment */
+        margin-bottom: 20px; /* Reduced margin-bottom */
+        font-size: 1.5rem; /* Adjusted heading size for small screens */
+        font-family: 'Poppins', sans-serif;
+        color: #003060;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+
+/* Section Styles for 768px screens */
+@media (max-width: 768px) {
+    .teamsSection {
+        background: #ffffff;
+        padding: 40px 15px;
+        text-align: center;
+    }
+
+    /* Section Title */
+    .sectionTitle {
+        font-size: 1.8rem; /* Adjusted font size for medium screens */
+        font-family: 'Playfair Display', serif;
+        color: #003060;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .sectionTitle::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 3px;
+        background: #ff8000;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Section Tagline */
+    .sectionTagline {
+        font-size: 1.3rem; /* Slightly larger font size for medium screens */
+        font-family: 'Roboto', sans-serif;
+        color: #173b45;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        line-height: 1.5;
+        font-style: italic;
+    }
+
+    /* Carousel Container */
+    .carouselContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* Image Wrapper */
+    .imageWrapper {
+        display: flex;
+        transition: transform 1s ease;
+        position: relative;
+        width: 90%;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Image Card */
+    .carouselImageCard {
+        margin-top: -50px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        position: absolute;
+        top: 0;
+        width: 75%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transform: scale(0.95);
+    }
+
+    .carouselImageCard.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /* Image Item */
+    .carouselImageItem {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Team Names Wrapper */
+    .teamNamesWrapper {
+        margin-top: 20px;
+    }
+
+    .teamHeading {
+        margin-top: -160px;
+        margin-bottom: 40px;
+        font-size: 1.8rem; /* Adjusted heading size for medium screens */
+        font-family: 'Poppins', sans-serif;
+        color: #003060;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 }

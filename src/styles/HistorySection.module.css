@@ -1,132 +1,177 @@
 /* History Section Styles */
 .historySection {
-    background: #ffffff;
-    padding: 100px 20px;
-    text-align: center;
+  background: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
 }
 
 .historySectionTitle {
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-    color: #003060;
-    margin-bottom: 5px;
-    /* text-transform: uppercase; */
-    letter-spacing: 1px;
-    position: relative;
-    display: inline-block;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  color: #003060;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
 }
 
-/* Underline Section Title with #ff8000 */
 .historySectionTitle::after {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 3px;
-    background: #ff8000;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #ff8000;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Section Subtitle */
 .historySectionSubtitle {
-    font-size: 1.4rem;
-    font-family: 'Roboto', sans-serif;
-    color: #173b45;
-    margin-bottom: 40px;
-    line-height: 1.8;
-    font-style: italic;
-    font-weight: 400;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  color: #173b45;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  font-style: italic;
+  font-weight: 400;
 }
 
 /* Content Wrapper */
 .historyContentWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 /* Left side Image Slider */
 .imageCard {
-    flex: 1;
-    max-width: 600px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.501);
-    overflow: hidden;
-    height: 300px;
-    position: relative;
-    padding: 0;
+  flex: 1;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  height: 300px;
+  position: relative;
 }
 
 .imageSlider {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .imageSlider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease;
-    filter: brightness(1.1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  visibility: visible !important; /* Ensure visibility in all views */
 }
 
 .imageSlider .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .imageSlider .slide.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Right side Text Summary */
 .textCard {
-    flex: 1;
-    max-width: 800px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.751);
-    padding: 20px;
-    text-align: left;
+  flex: 1;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  text-align: left;
 }
 
 .textCard h3 {
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    color: #ff8000;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ff8000;
+  margin-bottom: 20px;
 }
 
 .textCard p {
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #4a4a4a;
-    line-height: 1.8;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
+  line-height: 1.8;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .historyContentWrapper {
-        flex-direction: column;
-    }
+/* Mobile View: For Screens up to 768px */
+@media screen and (max-width: 768px) {
+  .historySection {
+    padding: 60px 20px;
+  }
 
-    .imageCard,
-    .textCard {
-        max-width: 90%;
-    }
+  .historySectionTitle {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .historySectionSubtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .historyContentWrapper {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .imageCard {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .imageSlider {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imageSlider img {
+    visibility: visible !important; /* Ensure images are visible */
+  }
+
+  .imageSlider .slide {
+    opacity: 0;
+  }
+
+  .imageSlider .slide.active {
+    opacity: 1;
+  }
+
+  .textCard {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .textCard h3 {
+    font-size: 1.6rem;
+  }
+
+  .textCard p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
 }
