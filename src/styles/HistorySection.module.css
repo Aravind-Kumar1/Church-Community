@@ -6,7 +6,7 @@
 }
 
 .historySectionTitle {
-  font-size: 1.9rem;
+  font-size: 3rem;
   font-family: 'Playfair Display', serif;
   color: #003060;
   margin-bottom: 5px;
@@ -151,6 +151,8 @@
 
   .imageSlider img {
     visibility: visible !important; /* Ensure images are visible */
+    object-fit: cover; /* Maintain aspect ratio */
+    height: 100%;
   }
 
   .imageSlider .slide {
@@ -173,5 +175,70 @@
   .textCard p {
     font-size: 1.1rem;
     line-height: 1.6;
+  }
+}
+
+/* Mobile View: For Screens up to 480px */
+@media screen and (max-width: 480px) {
+  .historySection {
+    padding: 50px 15px;
+  }
+
+  .historySectionTitle {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+  }
+
+  .historySectionSubtitle {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+
+  .historyContentWrapper {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .imageCard {
+    width: 100%;
+    height: 220px; /* Reduced height for better fit */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .imageSlider {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imageSlider img {
+    visibility: visible !important; /* Ensure images are visible */
+    object-fit: cover; /* Maintain aspect ratio */
+    height: 100%;
+  }
+
+  .imageSlider .slide {
+    opacity: 0;
+  }
+
+  .imageSlider .slide.active {
+    opacity: 1;
+  }
+
+  .textCard {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .textCard h3 {
+    font-size: 1.4rem;
+  }
+
+  .textCard p {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }

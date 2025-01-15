@@ -168,7 +168,7 @@
     }
 
     .heading {
-        font-size: 1.8rem; /* Adjust heading size */
+        font-size: 1.3rem; /* Adjust heading size */
         margin-bottom: 10px;
     }
 
@@ -198,7 +198,7 @@
     }
 
     .sectionTitle {
-        font-size: 1.9rem; /* Smaller title size for very small screens */
+        font-size: 1.8rem; /* Smaller title size for very small screens */
         margin-bottom: 10px;
     }
 
@@ -228,7 +228,7 @@
         order: 2; /* Ensures text card is at the bottom */
         width: 100%;
         max-width: 95%; /* Slight margin */
-        margin: 20 auto;
+        margin: 35 auto;
         padding: 15px; /* Minimal padding */
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Lighter shadow */
     }

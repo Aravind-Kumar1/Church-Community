@@ -223,10 +223,12 @@
 /* Mobile-specific Hero Image for 480px and below */
 @media (max-width: 480px) {
   .heroImageMobile {
+    padding: 0; /* Removed extra padding */
+    text-align: center;
     display: block; /* Show the mobile-specific image */
-    margin-top: 0px;
-    width: 100%;
-    height: 200px; /* Adjust height for smaller devices */
+    margin-top: 0;
+    width: 100%; /* Ensure the image takes the full width */
+    height: 200px; /* Adjust height for smaller screens */
     object-fit: cover;
     filter: brightness(120%);
   }
@@ -237,6 +239,8 @@
     margin-bottom: 10px;
     color: #003366;
     text-align: center; /* Center heading */
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
 
   .heading::after {
@@ -254,6 +258,8 @@
     color: #555;
     margin-bottom: 15px;
     text-align: center; /* Center text */
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
 
   /* Card Grid */
@@ -263,6 +269,8 @@
     gap: 10px; /* Reduced gap between cards */
     padding: 20px 10px;
     justify-items: center; /* Center cards */
+    width: 100%; /* Ensure grid takes up the full width */
+    box-sizing: border-box; /* Ensures proper width handling */
   }
 
   /* Card Styling */
@@ -275,6 +283,7 @@
     padding: 10px;
     width: 100%; /* Ensure full width */
     max-width: 280px; /* Limit max width for cards */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
 
   /* Adjust the card images for better clarity and fit */
