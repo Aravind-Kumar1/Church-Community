@@ -130,26 +130,125 @@
 }
 
 /* Responsive Design */
+
+/* Up to 768px */
 @media (max-width: 768px) {
+  .heroSection {
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .heroHeading {
+    font-size: 24px;
+  }
+
+  .heroDescription {
+    font-size: 16px;
+    margin: 0 auto 20px;
+  }
+
   .formRow {
     flex-direction: column;
   }
 
   .formGroup {
     flex: 1 1 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .heroHeading {
-    font-size: 28px;
-  }
-
-  .heroDescription {
-    font-size: 14px;
+    margin-bottom: 15px; /* Decrease distance between input fields */
   }
 
   .formContainer {
     padding: 20px;
+    margin: 0 auto; /* Center the form container */
+  }
+
+  .submitButton {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .formTextarea {
+    width: 100%; /* Increase width of prayer request input field */
+  }
+}
+
+/* Up to 480px */
+@media (max-width: 480px) {
+  .heroSection {
+    margin-top: 10px;
+  }
+
+  .heroHeading {
+    font-size: 22px;
+  }
+
+  .heroDescription {
+    font-size: 14px;
+    margin: 0 auto 15px;
+  }
+
+  .formContainer {
+    padding: 15px;
+    margin: 0 auto; /* Center the form container */
+  }
+
+  .submitButton {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .formLabel {
+    font-size: 14px;
+  }
+
+  .formInput,
+  .formSelect {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .formTextarea {
+    font-size: 14px;
+    width: 100%; /* Increase width of prayer request input field */
+  }
+}
+
+/* Up to 348px */
+@media (max-width: 348px) {
+  .heroSection {
+    margin-top: 10px;
+  }
+
+  .heroHeading {
+    font-size: 20px;
+  }
+
+  .heroDescription {
+    font-size: 12px;
+    margin: 0 auto 10px;
+  }
+
+  .formContainer {
+    padding: 12px;
+    margin: 0 auto; /* Center the form container */
+  }
+
+  .submitButton {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .formLabel {
+    font-size: 12px;
+  }
+
+  .formInput,
+  .formSelect {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .formTextarea {
+    font-size: 12px;
+    width: 100%; /* Increase width of prayer request input field */
   }
 }

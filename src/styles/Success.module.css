@@ -1,19 +1,76 @@
 /* styles/Success.module.css */
 .successContainer {
-    margin-top: 80px;
-    padding: 50px;
-    text-align: center;
+  margin-top: 80px;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 900px; /* Optional: Limit max-width to keep it neat */
+  margin: 80px auto 40px; /* Center the container horizontally */
+}
+
+.successHeading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.successMessage {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+
+/* Up to 768px */
+@media (max-width: 768px) {
+  .successContainer {
+    padding: 40px;
+    margin-top: 60px;
   }
-  
+
   .successHeading {
-    font-size: 36px;
-    font-weight: bold;
-    color: #28a745;
+    font-size: 30px;
   }
-  
+
   .successMessage {
-    font-size: 18px;
-    color: #333;
-    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 15px;
   }
-  
+}
+
+/* Up to 480px */
+@media (max-width: 480px) {
+  .successContainer {
+    padding: 30px;
+    margin-top: 40px;
+  }
+
+  .successHeading {
+    font-size: 26px;
+  }
+
+  .successMessage {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+/* Up to 348px */
+@media (max-width: 348px) {
+  .successContainer {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .successHeading {
+    font-size: 22px;
+  }
+
+  .successMessage {
+    font-size: 12px;
+    margin-top: 8px;
+    
+  }
+}

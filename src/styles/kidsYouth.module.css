@@ -52,3 +52,80 @@
   margin-bottom: 40px;
   line-height: 1.5;
 }
+
+
+/* Mobile-specific Design (348px and below) */
+@media (max-width: 348px) {
+  .videoSection {
+    padding: 20px;
+    margin-top: 50px; /* Adjusted for smaller screen */
+  }
+
+  .heading {
+    font-size: 1.8rem; /* Reduced font size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .tagline {
+    font-size: 1.2rem; /* Smaller tagline text */
+    margin-bottom: 30px;
+  }
+
+  .videoGrid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    gap: 15px; /* Reduced gap between videos */
+  }
+}
+
+/* Mobile-specific Design (480px and below) */
+@media (max-width: 480px) {
+  .videoSection {
+    padding: 30px;
+    margin-top: 70px; /* Slightly adjusted top margin */
+  }
+
+  .heading {
+    font-size: 2rem; /* Slightly reduced font size */
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 1.4rem; /* Adjusted tagline font size */
+    margin-bottom: 35px;
+  }
+
+  .videoGrid {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 20px; /* Slightly reduced gap */
+  }
+}
+
+/* Mobile-specific Design (768px and below) */
+@media (max-width: 768px) {
+  .videoSection {
+    padding: 35px;
+    margin-top: 80px; /* Adjusted for better spacing */
+  }
+
+  .heading {
+    font-size: 2.4rem; /* Adjusted for mobile screens */
+    margin-bottom: 25px;
+  }
+
+  .tagline {
+    font-size: 1.4rem; /* Slightly adjusted font size */
+    margin-bottom: 40px;
+  }
+
+  .videoGrid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for 768px */
+    gap: 20px; /* Adjusted gap for better fit */
+  }
+}
+
+/* For larger screens (1200px and above) */
+@media (min-width: 1200px) {
+  .videoGrid {
+    grid-template-columns: repeat(4, 1fr); /* Default grid for larger screens */
+  }
+}

@@ -1,8 +1,12 @@
 /* General Container Styling */
-.container {
-  padding: 40px 20px;
+.containerHero {
+  padding: 0 20px; /* Removed padding from the sides, kept it for top and bottom */
+  margin: 0 auto; /* Ensures that the container is centered */
   text-align: center;
   background-color: #f9f9f9;
+  box-sizing: border-box;
+  max-width: 100%; /* Ensure no overflow */
+  width: 100%; /* Set to 100% to avoid any horizontal scrolling */
 }
 
 /* Hero Section */
@@ -10,14 +14,16 @@
   position: relative;
   text-align: center;
   color: white;
+  margin: 0 auto;
 }
 
 .heroImage {
-  margin-top: 80px;
-  width: 70%;
-  height: 500px;
-  object-fit: contain;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   filter: brightness(120%);
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .heroText {
@@ -28,43 +34,50 @@
 }
 
 .heroText h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-
 .heroText p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: lighter;
 }
 
 /* Heading Section */
 .heading {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #003366;
+  padding: 0 15px; /* Padding added for responsiveness */
 }
+
 .heading::after {
   content: "";
   display: block;
   width: 150px;
   height: 3px;
   background-color: #ff6600; /* Accent color */
-  margin: 5px auto;
+  margin: 10px auto;
 }
 
 .description {
   font-size: 1.1rem;
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  padding: 0 15px; /* Padding for better readability */
+  text-align: center;
 }
+
 /* Card Grid */
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Reduced the min-width of cards */
-  gap: 20px; /* Reduced the gap between cards */
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Responsive cards */
+  gap: 20px;
+  padding: 0 15px; /* Padding for the grid */
+  justify-items: center; /* Ensure cards are centered */
+  width: 100%; /* Ensure grid takes full width */
 }
 
 /* Card Styling */
@@ -75,246 +88,319 @@
   text-align: center;
   overflow: hidden;
   transition: transform 0.3s ease;
-  padding: 15px; /* Added padding inside cards */
+  padding: 15px;
+  width: 100%;
+  max-width: 300px; /* Constrained width for mobile */
+  box-sizing: border-box; /* Ensure padding doesn’t overflow */
 }
-
-/* .card:hover {
-  transform: translateY(-5px);
-} */
 
 .cardImage {
   width: 100%;
-  height: 140px; /* Reduced the height of the image */
+  height: 180px;
   object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .cardTitle {
-  font-size: 1.1rem; /* Reduced the font size of the card title */
+  font-size: 1.1rem;
   font-weight: bold;
   color: #003366;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .prayerButton {
   background-color: #003366;
   color: white;
-  padding: 8px 18px; /* Reduced padding for smaller button */
+  padding: 12px 24px;
   border: none;
-  border-radius: 20px;
-  font-size: 0.9rem; /* Reduced font size for the button */
-  margin: 10px 0;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin: 20px auto;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
 }
 
 .prayerButton:hover {
   background-color: #005cbf;
   transform: translateY(-3px);
 }
-/* Mobile-specific Hero Image for 768px and below */
-@media (max-width: 768px) {
-  .heroImage {
-    display: none; /* Hide the desktop image for mobile */
-  }
-  .heroImageMobile {
-    display: block; /* Show the mobile-specific image */
-    margin-top: 30px;
-    width: 100%;
-    height: 280px; /* Adjust height as needed */
-    object-fit: cover;
-    filter: brightness(120%);
-  }
-}
 
-/* Mobile-specific Hero Image for 768px and below */
+/* Media Queries for Mobile View */
+
+/* For devices up to 768px */
 @media (max-width: 768px) {
+  /* Hero Image */
   .heroImage {
-    display: none; /* Hide the desktop image for mobile */
+    display: none; /* Hide desktop image */
   }
 
   .heroImageMobile {
-    display: block; /* Show the mobile-specific image */
-    margin-top: 20px;
-    width: 100%;
-    height: 250px; /* Adjust height for mobile */
-    object-fit: cover;
-    filter: brightness(120%);
-  }
-
-  /* Heading Section */
-  .heading {
-    font-size: 1.8rem; /* Adjust font size for mobile */
-    margin-bottom: 10px;
-    color: #003366;
-    text-align: center; /* Center heading */
-  }
-
-  .heading::after {
-    content: "";
     display: block;
-    width: 120px; /* Adjusted for mobile */
-    height: 3px;
-    background-color: #ff6600;
-    margin: 10px auto; /* Center the line */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(120%);
+    margin: 0 auto;
+    border-radius: 10px;
   }
 
-  /* Description Section */
+  /* Heading */
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  /* Description */
   .description {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 15px;
     color: #555;
-    margin-bottom: 20px;
-    text-align: center; /* Center text */
+    line-height: 1.6;
   }
 
   /* Card Grid */
   .cardGrid {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column layout for mobile */
-    gap: 15px; /* Reduced gap between cards */
-    padding: 15px;
-    justify-items: center; /* Center cards */
+    gap: 15px;
+    padding: 0 15px; /* Padding for the grid */
+    justify-items: center;
+    width: 100%; /* Ensure grid fills the screen */
   }
 
-  /* Card Styling */
+  /* Card */
   .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-    padding: 12px; /* Padding inside the card */
-    width: 100%; /* Ensure full width */
-    max-width: 320px; /* Limit max width for cards */
+    padding: 20px;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 0 auto;
   }
 
-  /* Adjust the card images for better clarity and fit */
+  /* Card Image */
   .cardImage {
-    width: 100%;
-    height: 200px; /* Adjust height for a better fit */
-    object-fit: cover; /* Ensure image fills the area without distortion */
-    object-position: center; /* Center the image inside the card */
-  }
-
-  .cardTitle {
-    font-size: 1rem; /* Adjusted title font size */
-    font-weight: bold;
-    color: #003366;
-    margin: 10px 0;
-  }
-
-  .prayerButton {
-    background-color: #003366;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-
-  .prayerButton:hover {
-    background-color: #005cbf;
-    transform: translateY(-3px);
-  }
-}
-
-/* Mobile-specific Hero Image for 480px and below */
-@media (max-width: 480px) {
-  .heroImageMobile {
-    padding: 0; /* Removed extra padding */
-    text-align: center;
-    display: block; /* Show the mobile-specific image */
-    margin-top: 0;
-    width: 100%; /* Ensure the image takes the full width */
-    height: 200px; /* Adjust height for smaller screens */
+    height: 180px;
     object-fit: cover;
-    filter: brightness(120%);
-  }
-
-  /* Heading Section */
-  .heading {
-    font-size: 1.5rem; /* Smaller heading font */
-    margin-bottom: 10px;
-    color: #003366;
-    text-align: center; /* Center heading */
-    width: 100%; /* Ensure it takes full width */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-  }
-
-  .heading::after {
-    content: "";
-    display: block;
-    width: 100px; /* Adjusted for smaller screens */
-    height: 3px;
-    background-color: #ff6600;
-    margin: 10px auto; /* Center the line */
-  }
-
-  /* Description Section */
-  .description {
-    font-size: 0.9rem; /* Smaller font size */
-    color: #555;
+    border-radius: 10px;
     margin-bottom: 15px;
-    text-align: center; /* Center text */
-    width: 100%; /* Ensure it takes full width */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
 
-  /* Card Grid */
-  .cardGrid {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column layout for mobile */
-    gap: 10px; /* Reduced gap between cards */
-    padding: 20px 10px;
-    justify-items: center; /* Center cards */
-    width: 100%; /* Ensure grid takes up the full width */
-    box-sizing: border-box; /* Ensures proper width handling */
-  }
-
-  /* Card Styling */
-  .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-    padding: 10px;
-    width: 100%; /* Ensure full width */
-    max-width: 280px; /* Limit max width for cards */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-  }
-
-  /* Adjust the card images for better clarity and fit */
-  .cardImage {
-    width: 100%;
-    height: 150px; /* Adjusted height for smaller screens */
-    object-fit: cover; /* Ensure image fills the area without distortion */
-    object-position: center; /* Center the image inside the card */
-  }
-
+  /* Card Title */
   .cardTitle {
-    font-size: 0.9rem; /* Smaller title font size */
+    font-size: 1.1rem;
     font-weight: bold;
     color: #003366;
-    margin: 8px 0;
+    margin-top: 15px;
   }
 
+  /* Prayer Button */
   .prayerButton {
+    padding: 12px 24px;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 25px auto 15px;
+    text-align: center;
+    border-radius: 30px;
     background-color: #003366;
-    color: white;
-    padding: 6px 14px; /* Smaller padding */
-    border: none;
-    border-radius: 20px;
-    font-size: 0.85rem; /* Smaller font size */
-    margin: 8px 0;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
 
+  /* Hover Effect on Prayer Button */
   .prayerButton:hover {
     background-color: #005cbf;
     transform: translateY(-3px);
+  }
+
+  /* Hover Effect on Card */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Specific Mobile View (up to 480px) */
+@media (max-width: 480px) {
+  /* Hero Image */
+  .heroImageMobile {
+    height: 200px;
+    border-radius: 10px;
+    padding: 0;
+  }
+
+  /* Heading */
+  .heading {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: bold;
+    color: #003366;
+  }
+
+  /* Description */
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 15px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* Card Grid */
+  .cardGrid {
+    gap: 10px;
+    padding: 0; /* Removed extra padding for mobile */
+  }
+
+  /* Card */
+  .card {
+    padding: 15px;
+    max-width: 280px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    margin: 0 auto;
+  }
+
+  /* Card Image */
+  .cardImage {
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* Card Title */
+  .cardTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
+  }
+
+  /* Prayer Button */
+  .prayerButton {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    margin: 5px auto 10px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #003366;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  /* Hover Effect on Prayer Button */
+  .prayerButton:hover {
+    background-color: #005cbf;
+    transform: translateY(-3px);
+  }
+
+  /* Hover Effect on Card */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+  }
+}
+
+/* Media Queries for 348px Screen Size */
+@media (max-width: 348px) {
+  /* Hero Image */
+  .heroImage {
+    margin-top: 10px;
+    height: 180px; /* Adjusted for smaller screen size */
+  }
+
+  .heroImageMobile {
+    display: block;
+    width: 100%;
+    height: 180px; /* Adjusted height */
+    object-fit: cover;
+    filter: brightness(120%);
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  /* Heading */
+  .heading {
+    margin-top: 30px;
+    font-size: 1.2rem; /* Adjusted for narrow screens */
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0;
+  }
+
+  /* Description */
+  .description {
+    font-size: 0.85rem; /* Slightly smaller font size */
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Card Grid */
+  .cardGrid {
+    gap: 8px;
+    padding: 0 10px; /* Adjusted padding */
+  }
+
+  /* Card */
+  .card {
+    padding: 10px;
+    max-width: 240px; /* Smaller card width */
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    margin: 0 auto;
+  }
+
+  /* Card Image */
+  .cardImage {
+    height: 120px; /* Adjusted card image height */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Card Title */
+  .cardTitle {
+    font-size: 0.95rem; /* Adjusted font size */
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
+  }
+
+  /* Prayer Button */
+  .prayerButton {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    margin: 0px auto 10px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #003366;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  /* Hover Effect on Prayer Button */
+  .prayerButton:hover {
+    background-color: #005cbf;
+    transform: translateY(-3px);
+  }
+
+  /* Hover Effect on Card */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
   }
 }

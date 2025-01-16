@@ -20,6 +20,10 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif; /* Ensure consistent font */
 }
+* {
+  box-sizing: border-box;
+}
+
 
 /* Optional: Ensures no horizontal overflow on the main content */
 .mainContent {
@@ -224,3 +228,98 @@ body {
 }
 
 
+
+/* Up to 768px */
+@media (max-width: 768px) {
+    .hero {
+      flex-direction: column; /* Stack the content vertically */
+      padding: 30px;
+      height: auto; /* Allow content to adjust for small screens */
+    }
+  
+    .heroContent {
+      max-width: 100%; /* Make content take full width */
+      margin-left: 0;
+      margin-top: 0;
+      text-align: center;
+    }
+  
+    .heroTitle {
+      font-size: 2.4rem;
+    }
+  
+    .heroSubtitle {
+      font-size: 1.3rem;
+    }
+  
+    .heroDescription {
+      font-size: 1.1rem;
+    }
+  
+    .heroImage {
+      max-width: 70%; /* Reduce image size for mobile */
+      margin-top: 20px;
+    }
+  
+    .heroButtons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Up to 480px */
+  @media (max-width: 480px) {
+    .heroTitle {
+      font-size: 2rem;
+    }
+  
+    .heroSubtitle {
+      font-size: 1.2rem;
+    }
+  
+    .heroDescription {
+      font-size: 1rem;
+    }
+  
+    .heroImage {
+      max-width: 80%; /* Further reduce image size for very small screens */
+    }
+  
+    .heroButtons {
+      gap: 15px;
+    }
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 12px 25px;
+    }
+  }
+  
+  /* Up to 348px */
+  @media (max-width: 348px) {
+    .heroTitle {
+      font-size: 1.8rem;
+    }
+  
+    .heroSubtitle {
+      font-size: 1.1rem;
+    }
+  
+    .heroDescription {
+      font-size: 0.9rem;
+    }
+  
+    .heroImage {
+      max-width: 85%; /* Image further reduced for extremely small screens */
+    }
+  
+    .button {
+      font-size: 0.8rem;
+      padding: 10px 20px;
+    }
+  }
