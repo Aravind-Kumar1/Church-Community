@@ -317,3 +317,87 @@
     opacity: 1;
   }
 }
+
+
+/* Mobile View Styles for Hero Section (348px and smaller) */
+@media screen and (max-width: 348px) {
+  .heroSection {
+    padding: 40px 10px; /* Reduced padding for smaller screens */
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    
+  }
+
+  .heroContent {
+    margin-left: 0;
+    margin-top: -12px;
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 50px; /* Reduced margin for smaller screens */
+    text-align: center;
+  }
+
+  .heroTitle {
+    font-size: 1.8rem; /* Smaller font size for smaller screens */
+    margin-bottom: 15px;
+    color: #003060;
+    line-height: 1.2;
+    animation: fadeInTop 1.5s ease-out;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem; /* Adjusted for readability */
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+
+  .heroDescription {
+    font-size: 0.85rem;
+    color: #173b45;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .heroButtons {
+    display: flex;
+    flex-direction: column; /* Buttons stacked vertically */
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 100%; /* Full-width buttons for smaller screens */
+  }
+
+  .button {
+    width: 100%; /* Full width for better accessibility */
+    padding: 12px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 25px; /* Slightly reduced border-radius */
+    margin-top: 10px;
+  }
+
+  .button:first-child {
+    background: linear-gradient(45deg, #0056b3, #007fff);
+  }
+
+  .button:last-child {
+    background: linear-gradient(45deg, #ff8000, #ffb347);
+  }
+
+  .heroImageWrapper {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .heroImage {
+    margin-top: -15px;
+    width: 100%; /* Scales down proportionally */
+    height: auto;
+    border-radius: 10px;
+  }
+}

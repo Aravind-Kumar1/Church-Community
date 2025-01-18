@@ -411,3 +411,140 @@
     content: none;
   }
 }
+
+/* Mobile View Styles for 348px Screen */
+@media screen and (max-width: 348px) {
+  .header {
+    padding: 6px 8px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Logo and Name Styling */
+  .logo {
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 22px; /* Smaller logo size */
+    height: auto;
+  }
+
+  .logoTextContainer {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 7px; /* Smaller font size */
+  }
+
+  .logoText {
+    font-size: 9px; /* Further adjusted font size */
+    font-weight: bold;
+    color: #173B45;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .subtitle {
+    font-size: 6px; /* Adjusted subtitle size */
+    font-weight: 400;
+    color: #555555;
+    margin-top: 1px;
+    font-style: italic;
+    line-height: 1.1;
+  }
+
+  /* Get Involved Button in the Center */
+  .ctaButtonContainer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .ctaButton {
+    margin-left: 3px;
+    font-size: 8px; /* Further reduced font size for button */
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px 5px; /* Compact padding */
+    background-color: #FF8225;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px; /* Smaller border radius */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .ctaButton:hover {
+    background-color: #E6711C;
+  }
+
+  /* Menu Icon on the Right */
+  .menuIcon {
+    position: absolute;
+    right: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15px; /* Reduced height */
+    z-index: 1100;
+  }
+
+  .menuIcon .line {
+    width: 18px; /* Smaller width */
+    height: 2px;
+    background-color: #003060;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Navigation Links Styling */
+  .navLinks {
+    position: absolute;
+    top: 45px; /* Adjusted top position */
+    left: 50%;
+    transform: translateX(-50%); /* Center the menu */
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    display: none; /* Hidden by default */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .navLinks.active {
+    margin-left: 70px;
+    display: flex; /* Show the nav links when the menu is open */
+  }
+
+  .navLinks li a {
+    margin-left: 0; /* Removed margin-left */
+    font-size: 7px; /* Further reduced font size */
+    padding: 5px 0;
+    text-align: left;
+    color: #003060;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+  }
+
+  .navLinks li a:hover {
+    color: #FF8225; /* Highlight on hover */
+  }
+
+  .navLinks li a.active {
+    color: #FF8225; /* Highlight active link */
+  }
+
+  /* Disable underline for mobile */
+  .navLinks li a::after {
+    content: none;
+  }
+}

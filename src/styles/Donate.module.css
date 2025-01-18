@@ -61,3 +61,65 @@
     border-radius: 10px;
   }
   
+
+/* Responsive Design for 348px and 480px */
+@media (max-width: 480px) {
+  .card{
+    margin-top: -40px;
+  }
+  .donateSection{
+    margin-left: 15px;
+    background-color: #ffffff;
+    margin-top: 5px;
+  }
+  .card {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .leftContent {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem; /* Slightly smaller for 480px */
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 348px) {
+  .card{
+    margin-top: -40px;
+  }
+  .donateSection{
+    margin-left: 15px;
+    background-color: #ffffff;
+    margin-top: 5px;
+  }
+  .leftContent {
+    padding: 0.8rem; /* Smaller padding for very small screens */
+  }
+
+  .heading {
+    font-size: 1.3rem; /* Further reduced for 348px */
+  }
+
+  .message {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+  }
+
+  .rightContent {
+    padding: 0.5rem;
+  }
+}

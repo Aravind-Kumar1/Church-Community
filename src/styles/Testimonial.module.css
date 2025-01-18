@@ -295,3 +295,102 @@
     font-weight: bold;
   }
 }
+
+/* Mobile View Styles for About Section - 348px */
+@media screen and (max-width: 348px) {
+  .aboutSection {
+    padding: 20px 10px; /* Minimal padding for small screens */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack everything vertically */
+  }
+
+  /* Section Heading */
+  .sectionHeading {
+    font-size: 1.6rem; /* Smaller size for small screens */
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 10px; /* Compact spacing */
+  }
+
+  .sectionHeading::after {
+    width: 60px; /* Narrower underline */
+    height: 2px; /* Thin line */
+    background-color: #ff6600;
+    margin: 6px auto; /* Smaller margin */
+  }
+
+  /* Container Layout */
+  .container {
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 15px; /* Reduced gap for compactness */
+  }
+
+  /* Image Wrapper */
+  .imageWrapper {
+    width: 100%; /* Full width for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* About Image */
+  .aboutImage {
+    width: 85%; /* Adjusted size for narrow screens */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(231, 125, 26, 0.1);
+    filter: brightness(1);
+    transition: transform 0.3s ease;
+  }
+
+  .aboutImage:hover {
+    transform: scale(1.03);
+  }
+
+  /* About Text Box */
+  .aboutText {
+    width: 95%; /* Take most of the screen width */
+    max-width: 320px; /* Limit the width */
+    padding: 15px; /* Compact padding */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align text */
+  }
+
+  /* Box Heading */
+  .boxHeading {
+    font-size: 1.4rem; /* Adjusted size for headings */
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 8px; /* Smaller margin */
+  }
+
+  /* About Paragraph */
+  .aboutPara {
+    font-size: 0.8rem; /* Smaller text size for readability */
+    color: #333333;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  /* Member Count */
+  .memberCount {
+    font-size: 1rem; /* Proportional font size */
+    color: #003366;
+    font-weight: bold;
+  }
+
+  .number {
+    font-size: 1rem; /* Adjusted size for numbers */
+    color: #ff6600;
+    font-weight: bold;
+  }
+}

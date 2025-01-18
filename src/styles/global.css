@@ -277,7 +277,14 @@ body {
     .heroTitle {
       font-size: 2rem;
     }
-  
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
     .heroSubtitle {
       font-size: 1.2rem;
     }
@@ -304,6 +311,14 @@ body {
   @media (max-width: 348px) {
     .heroTitle {
       font-size: 1.8rem;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
   
     .heroSubtitle {

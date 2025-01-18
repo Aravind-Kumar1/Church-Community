@@ -146,3 +146,75 @@
     margin: 0;
   }
   
+  /* Responsive Styles for 480px */
+@media (max-width: 480px) {
+  .contactFormSection {
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 15px 5px;
+  }
+  .contactFormHeading {
+    font-size: 1.5rem;
+  }
+
+  .contactInputField,
+  .contactTextArea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .contactSubmitButton {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  .contactDetailsHeading{
+    font-size: 1.8rem;
+   }
+
+  .contactInfoText p {
+    font-size: 0.9rem;
+  }
+
+  .contactMapIframe {
+    height: 220px;
+  }
+}
+
+/* Responsive Styles for 348px */
+@media (max-width: 348px) {
+  .contactFormSection {
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 15px 5px;
+  }
+   .contactDetailsHeading{
+    font-size: 1.6rem;
+   }
+  .contactFormContent {
+    padding: 15px;
+  }
+
+  .contactFormHeading {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .contactInputField,
+  .contactTextArea {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+
+  .contactSubmitButton {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .contactInfoText p {
+    font-size: 0.85rem;
+  }
+
+  .contactMapIframe {
+    height: 180px;
+  }
+}

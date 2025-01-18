@@ -1,94 +1,231 @@
 /* /styles/GetInvolved.module.css */
 
+/* Main Section */
 .getInvolvedSection {
-    padding: 60px 20px;
-    background-color: #f5f5f5;
-    text-align: center;
-  }
-  
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+/* Title */
+.getInvolvedTitle {
+  margin-top: 45px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #003366;
+  text-align: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Description */
+.getInvolvedDescription {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Form Container */
+.involvedForm {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.784);
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+/* Form Row */
+.formRow {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Ensure form elements wrap on smaller screens */
+  justify-content: space-between; /* Adjusts alignment */
+  box-sizing: border-box;
+}
+
+/* Form Group */
+.formGroup {
+  flex: 1;
+  text-align: left;
+  min-width: 280px; /* Ensures form fields are not too small */
+  max-width: 100%; /* Ensures proper scaling */
+  box-sizing: border-box;
+}
+
+/* Form Label */
+.formLabel {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Form Input, Select, Textarea */
+.formInput,
+.formSelect,
+.formTextArea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+/* Textarea Styling */
+.formTextArea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.formSubmitButton {
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto 0;
+  box-sizing: border-box; /* Ensures button fits correctly */
+}
+
+.formSubmitButton:hover {
+  background-color: #218838;
+}
+
+/* Mobile View (up to 768px) */
+@media (max-width: 768px) {
   .getInvolvedTitle {
-    
-    margin-top: 45px;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #003366;
+    font-size: 24px;
+    margin-top: 30px;
   }
-  
+
   .getInvolvedDescription {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
+    font-size: 16px;
   }
-  
-  .involvedForm {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.784);
-    width: 100%;
-    max-width: 900px;
-    margin: 20px auto;
-  }
-  
+
   .formRow {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 20px;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px;
   }
-  
+
   .formGroup {
-    flex: 1;
-    text-align: left;
+    width: 100%; /* Ensure form fields take full width */
+    min-width: 100%; /* Prevent form fields from becoming too small */
   }
-  
+
+  .formSubmitButton {
+    width: 90%; /* Button takes almost full width */
+    margin: 20px auto 0;
+  }
+}
+
+/* Specific Mobile View (up to 480px) */
+@media (max-width: 480px) {
+  .getInvolvedSection{
+    margin-left: 12px;
+  }
+  /* Adjust title size */
+  .getInvolvedTitle {
+    font-size: 22px;
+    margin-top: -15px;
+  }
+
+  /* Adjust description for smaller screens */
+  .getInvolvedDescription {
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+
+  /* Form Row and Form Group Adjustments */
+  .formRow {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap between fields */
+  }
+
+  .formGroup {
+    width: 100%;
+    min-width: 100%; /* Ensure form fields take full width */
+  }
   .formLabel {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 8px;
     display: block;
   }
-  
+
+  /* Form Inputs (Input, Select, Textarea) */
   .formInput,
   .formSelect,
   .formTextArea {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    font-size: 14px; /* Reduce font size for mobile */
+    padding: 10px; /* Smaller padding for mobile devices */
   }
-  
-  .formTextArea {
-    height: 150px;
-    resize: vertical;
-  }
-  
+
   .formSubmitButton {
-    margin-top: 10px;
-    margin-left: -720px;
-    background-color: #28a745;
-    color: white;
-    font-size: 16px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 20%;
-    transition: background-color 0.3s ease;
+    width: 80%; /* Button width adjusted */
+    padding: 10px 15px;
+    font-size: 14px;
   }
-  
-  .formSubmitButton:hover {
-    background-color: #218838;
+}
+
+/* Extra Mobile Adjustments (up to 348px) */
+@media (max-width: 348px) {
+  .getInvolvedTitle {
+    font-size: 20px;
+    margin-top: -15px;
   }
-  
-  @media (max-width: 768px) {
-    .formRow {
-      flex-direction: column;
-    }
-  
-    .formGroup {
-      width: 100%;
-    }
+
+  .getInvolvedDescription {
+    font-size: 12px;
+    padding: 0 5px; /* Reduced padding */
+    line-height: 1.3;
   }
-  
+
+  .formRow {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .formGroup {
+    width: 100%;
+    min-width: 100%;
+  }
+  .formLabel {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .formInput,
+  .formSelect,
+  .formTextArea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .formSubmitButton {
+    margin-bottom: -15px;
+    width: 70%;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
