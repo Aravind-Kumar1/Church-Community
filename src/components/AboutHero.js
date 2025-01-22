@@ -12,7 +12,7 @@ const AboutHero = () => {
           Welcome to ELIM
         </h1>
         <p className={styles.subAbbreviation}>
-          Emmanuel Living Integrity Mission
+          Emmanuel Living Impact Mission
         </p>
         <p className={styles.subHeading}>
           We are more than just a church; we are a community united in faith, love, and service.

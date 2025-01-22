@@ -40,16 +40,16 @@ const ContactUs = () => {
 
           {/* Social Media Icons */}
           <div className={styles.socialIcons}>
-            <a href="https://wa.me/11234567890" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919640540157" target="_blank" rel="noopener noreferrer">
               <img src="./whats.png" alt="WhatsApp" className={styles.icon} />
             </a>
-            <a href="https://instagram.com/churchname" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/elimimpact/" target="_blank" rel="noopener noreferrer">
               <img src="./social.png" alt="Instagram" className={styles.icon} />
             </a>
-            <a href="https://youtube.com/channel/churchname" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@elimimpact" target="_blank" rel="noopener noreferrer">
               <img src="./youtube.png" alt="YouTube" className={styles.icon} />
             </a>
-            <a href="https://twitter.com/churchname" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/elimimpact" target="_blank" rel="noopener noreferrer">
               <img src="./twitter.png" alt="Twitter" className={styles.icon} />
             </a>
           </div>

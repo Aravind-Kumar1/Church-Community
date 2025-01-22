@@ -64,7 +64,7 @@ const ChurchTimings = () => {
           </div>
           <div className={styles.timingDetails}>
             <ul>
-              <li>Ballaradana: 6 AM</li>
+              <li>Holy Communion</li>
             </ul>
           </div>
         </div>

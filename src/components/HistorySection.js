@@ -8,15 +8,20 @@ const HistorySection = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const images = [
-    "/old.jpg", // Image 1
-    "/pas_you.jpg", // Image 2
+    "/fir.jpg", // Image 1
+    "/sec.jpg", // Image 2
+    "/thir.JPG", // Image 3
     "/emmanuel church.jpg", // Image 3
+    "/old.jpg", // Image 1
+    "/last.jpg",
+    "/pas_you.jpg", // Image 2
+   
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -53,7 +58,7 @@ const HistorySection = () => {
         <div className={styles.textCard}>
           <h3>Our Journey</h3>
           <p>
-            The journey of Emmanuel Living Integrity Mission (ELIM) began in 1996
+            The journey of Emmanuel Living Impact Mission (ELIM) began in 1996
             at Film Nagar with a small but determined group of believers. Through
             unwavering dedication, hard work, and prayer, we built a strong community.
           </p>

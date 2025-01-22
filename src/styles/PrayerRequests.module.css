@@ -15,7 +15,7 @@
 }
 
 .heroImage {
-  margin-top: 80px;
+  margin-top: 120px;
   width: 70%;
   height: 500px;
   object-fit: cover; /* Ensures image fills container without distortion */
@@ -32,7 +32,7 @@
 }
 
 .heroText h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 10px;
 }

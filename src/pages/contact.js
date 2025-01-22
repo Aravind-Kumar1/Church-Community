@@ -151,8 +151,8 @@ const Contact = () => {
           <h2 className={styles.contactDetailsHeading}>Contact Information</h2>
           <div className={styles.contactInfoText}>
             <p><strong>Address:</strong> Film Nagar Rd Number 13, Tarakarama Nagar, Hakimpet, Hyderabad, Telangana 500096</p>
-            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-            <p><strong>Email:</strong> support@churchname.com</p>
+            <p><strong>Phone:</strong> +91 9908113279</p>
+            <p><strong>Email:</strong> emmanuelliving@gmail.com</p>
           </div>
           <div className={styles.contactMapWrapper}>
             <iframe

@@ -49,7 +49,7 @@ const Header = () => {
         </Link>
         <div className={styles.logoTextContainer}>
           <span className={styles.logoText}>ELIM</span>
-          <span className={styles.subtitle}>Emmanuel Living Integrity Mission</span>
+          <span className={styles.subtitle}>Emmanuel Living Impact Mission</span>
         </div>
       </div>
 

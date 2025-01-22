@@ -27,7 +27,7 @@ const Pastor = () => {
           </p>
           <p className={styles.name}>Pastor Rev A Krupa Rao Garu</p>
           <p className={styles.pastorPosition}>
-            Founder, Emmanuel Living Integrity Mission
+            Founder, Emmanuel Living Impact Mission
           </p>
 
           <div className={styles.pastorBox}>

@@ -28,7 +28,7 @@ const Footer = () => {
         <div className={styles.footerSection}>
           <h4>Contact Us</h4>
           <p><strong>Address:</strong> Patel Nagar Film Nagar, Hyderabad, Telangana</p>
-          <p><strong>Email:</strong> info@Emmanuel Living Integrity Mission.com</p>
+          <p><strong>Email:</strong> emmanuellivingimpactmission@gmail.com</p>
           <p><strong>Phone:</strong> +91 9908113279</p>
         </div>
 
@@ -36,10 +36,10 @@ const Footer = () => {
         <div className={styles.footerSection}>
           <h4>Follow Us</h4>
           <div className={styles.footerSocialIcons}>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+            <a href="https://www.facebook.com/elimimpact" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://x.com/elimimpact" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://www.instagram.com/elimimpact" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://www.youtube.com/@elimimpact" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const Footer = () => {
       
       {/* Copyright */}
       <div className={styles.footerCopyright}>
-        <p>&copy; 2025 Church Name. All Rights Reserved.</p>
+        <p>&copy; 2025 Emmanuel Living Impact Mission. All Rights Reserved.</p>
       </div>
     </footer>
   );
