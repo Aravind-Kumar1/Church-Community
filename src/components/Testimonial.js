@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       name: 'Willson',
       role: 'Youth Mentor',
-      image: './uday.jpg',
+      image: './w.png',
       text: 'After attending ELIM, my faith was restored, and I experienced healing in my life. I feel closer to God than ever before.',
     },
     {
@@ -31,7 +31,7 @@ const Testimonials = () => {
     {
       name: 'Uday Kiran',
       role: 'Sound Technician',
-      image: './uday.jpg',
+      image: './u.jpg',
       text: 'I’ve witnessed countless miracles in this community. The atmosphere is filled with hope and divine intervention.',
     },
     {
