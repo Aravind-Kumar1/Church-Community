@@ -4,8 +4,6 @@ This is a **Next.js** project developed for **Emmanuel Living Impact Mission (EL
 
 ![ELIM Church Website Thumbnail](public/elim-thumbnail.png)  
 
-## 🔥 Experience  
-
 **Emmanuel Living Impact Mission (ELIM) | Next.js, CSS Modules, EmailJS**  
 📅 **Nov 2024 – Feb 2025**  
 🛠 **Role:** Frontend Developer - Freelancer  
