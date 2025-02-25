@@ -6,7 +6,7 @@ This is a **Next.js** project developed for **Emmanuel Living Impact Mission (EL
 
 **Emmanuel Living Impact Mission (ELIM) | Next.js, CSS Modules, EmailJS**  
 📅 **Nov 2024 – Feb 2025**  
-🛠 **Role:** Frontend Developer - Freelancer  
+🛠 **Role:** Frontend Developer - Freelancer - https://elimimpact.com/  
 
 - **Developed** a fully responsive church website, increasing user engagement by **40%**.  
 - **Integrated** EmailJS for seamless contact form submissions, reducing manual efforts by **50%**.  
